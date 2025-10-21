@@ -11,7 +11,7 @@ const Root = () => {
           <Navbar />
         </nav>
       </header>
-      <main>
+      <main className="container mx-auto px-4 py-6">
         <Outlet />
       </main>
       <Footer />
