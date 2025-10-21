@@ -1,0 +1,74 @@
+[
+  {
+    "skillId": 1,
+    "skillName": "Beginner Guitar Lessons",
+    "providerName": "Alex Martin",
+    "providerEmail": "alex@skillswap.com",
+    "price": 20,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Acoustic guitar classes for complete beginners.",
+    "image": "https://i.postimg.cc/example1.png",
+    "category": "Music"
+  },
+  {
+    "skillId": 2,
+    "skillName": "Spoken English Practice",
+    "providerName": "Sara Hossain",
+    "providerEmail": "sara@skillswap.com",
+    "price": 10,
+    "rating": 4.6,
+    "slotsAvailable": 5,
+    "description": "Conversational English sessions for non-native speakers.",
+    "image": "https://i.postimg.cc/example2.png",
+    "category": "Language"
+  },
+  {
+    "skillId": 3,
+    "skillName": "Intro to Web Development",
+    "providerName": "Rafi Ahmed",
+    "providerEmail": "rafi@skillswap.com",
+    "price": 15,
+    "rating": 4.7,
+    "slotsAvailable": 4,
+    "description": "HTML, CSS basics and simple JS projects.",
+    "image": "https://i.postimg.cc/example3.png",
+    "category": "Tech"
+  },
+  {
+    "skillId": 4,
+    "skillName": "Yoga for Beginners",
+    "providerName": "Maya Khatun",
+    "providerEmail": "maya@skillswap.com",
+    "price": 12,
+    "rating": 4.9,
+    "slotsAvailable": 6,
+    "description": "Gentle yoga and breathing techniques.",
+    "image": "https://i.postimg.cc/example4.png",
+    "category": "Fitness"
+  },
+  {
+    "skillId": 5,
+    "skillName": "Basic Drawing Class",
+    "providerName": "Tanvir",
+    "providerEmail": "tanvir@skillswap.com",
+    "price": 8,
+    "rating": 4.5,
+    "slotsAvailable": 8,
+    "description": "Pencil shading and sketching basics.",
+    "image": "https://i.postimg.cc/example5.png",
+    "category": "Art"
+  },
+  {
+    "skillId": 6,
+    "skillName": "Bangla Conversational Practice",
+    "providerName": "Ruma Sen",
+    "providerEmail": "ruma@skillswap.com",
+    "price": 5,
+    "rating": 4.4,
+    "slotsAvailable": 7,
+    "description": "Casual Bangla speaking sessions for learners.",
+    "image": "https://i.postimg.cc/example6.png",
+    "category": "Language"
+  }
+]
