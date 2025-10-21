@@ -8,7 +8,7 @@
     "rating": 4.8,
     "slotsAvailable": 3,
     "description": "Acoustic guitar classes for complete beginners.",
-    "image": "https://i.postimg.cc/example1.png",
+    "image": "https://i.ibb.co.com/fGxKrvCs/Beginner-Guitar-Lessons.jpg",
     "category": "Music"
   },
   {
@@ -20,7 +20,7 @@
     "rating": 4.6,
     "slotsAvailable": 5,
     "description": "Conversational English sessions for non-native speakers.",
-    "image": "https://i.postimg.cc/example2.png",
+    "image": "https://i.ibb.co.com/q3NJTBqB/Spoken-English-Practice.jpg",
     "category": "Language"
   },
   {
@@ -32,7 +32,7 @@
     "rating": 4.7,
     "slotsAvailable": 4,
     "description": "HTML, CSS basics and simple JS projects.",
-    "image": "https://i.postimg.cc/example3.png",
+    "image": "https://i.ibb.co.com/2Y1QnLF7/Intro-to-Web-Development.jpg",
     "category": "Tech"
   },
   {
@@ -44,7 +44,7 @@
     "rating": 4.9,
     "slotsAvailable": 6,
     "description": "Gentle yoga and breathing techniques.",
-    "image": "https://i.postimg.cc/example4.png",
+    "image": "https://i.ibb.co.com/qY6FNGGT/Yoga-for-Beginners.jpg",
     "category": "Fitness"
   },
   {
@@ -56,19 +56,19 @@
     "rating": 4.5,
     "slotsAvailable": 8,
     "description": "Pencil shading and sketching basics.",
-    "image": "https://i.postimg.cc/example5.png",
+    "image": "https://i.ibb.co.com/sJqxFZPH/Basic-Drawing-Class.jpg",
     "category": "Art"
   },
   {
     "skillId": 6,
-    "skillName": "Bangla Conversational Practice",
+    "skillName": "Computer Hardware and Software",
     "providerName": "Ruma Sen",
     "providerEmail": "ruma@skillswap.com",
     "price": 5,
     "rating": 4.4,
     "slotsAvailable": 7,
-    "description": "Casual Bangla speaking sessions for learners.",
-    "image": "https://i.postimg.cc/example6.png",
-    "category": "Language"
+    "description": "Learn the basics of computer hardware components and software applications.",
+    "image": "https://i.ibb.co.com/MDvbg8xv/Computer-Hardware-and-Software.jpg",
+    "category": "Computer"
   }
 ]
