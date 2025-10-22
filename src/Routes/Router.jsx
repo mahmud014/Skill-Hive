@@ -4,6 +4,7 @@ import Home from "../Pages/Home";
 import ErrorPage from "../Components/ErrorPage";
 import LoadingPage from "../Components/LoadingPage";
 import SkillDetails from "../Pages/SkillDetails";
+import BrowseSkill from "../Pages/BrowseSkill";
 
 export const router = createBrowserRouter([
   {
@@ -21,6 +22,12 @@ export const router = createBrowserRouter([
         path: "skill/:id",
         element: <SkillDetails />,
         loader: () => fetch("/Data.json"),
+        hydrateFallbackElement: <LoadingPage />,
+      },
+      {
+        path: "browseskills",
+        element: <BrowseSkill />,
+        loader: () => fetch("/Browser.json"),
         hydrateFallbackElement: <LoadingPage />,
       },
     ],

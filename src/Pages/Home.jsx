@@ -3,6 +3,8 @@ import { useLoaderData } from "react-router";
 import SkillCard from "../Components/SkillCard";
 import Hero from "../Components/Hero";
 import LoadingPage from "../Components/LoadingPage";
+import TopRated from "../Components/TopRated";
+import HowItWorks from "../Components/HowItWorks";
 
 const Home = () => {
   const skillsData = useLoaderData();
@@ -11,39 +13,35 @@ const Home = () => {
   useEffect(() => {
     setSkills(skillsData);
   }, [skillsData]);
-  return (
-    <div>
-      <Suspense fallback={<LoadingPage />}>
-        <section className="mb-8">
-          <div className="hero bg-base-200 p-8 rounded-lg">
-            <div>
-              <h1 className="text-4xl font-bold">
-                SkillHive 🐝 — Learn and Share Skills
-              </h1>
-              <p className="mt-2">
-                A local platform to share and exchange skills with others.
-              </p>
-            </div>
-          </div>
-        </section>
-        <Hero />
 
+  return (
+    <div className="px-4 sm:px-6 lg:px-8">
+      <Suspense fallback={<LoadingPage />}>
+        {/* Hero Section */}
+        <section className="mb-8">
+          <Hero />
+        </section>
+
+        {/* Popular Skills */}
         <section>
-          <h2 className="text-2xl font-semibold my-10">Popular Skills</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <h2 className="text-2xl sm:text-3xl font-semibold my-8 sm:my-10 text-center sm:text-left">
+            Popular Skills
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {skills.map((skill) => (
               <SkillCard key={skill.skillId} skill={skill} />
             ))}
           </div>
         </section>
 
+        {/* Top Rated Mentors */}
+        <section className="my-12">
+          <TopRated />
+        </section>
+
+        {/* How It Works */}
         <section className="mt-8">
-          <h2 className="text-2xl font-semibold mb-4">How It Works</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="card p-4">Post or find a skill</div>
-            <div className="card p-4">Chat & schedule</div>
-            <div className="card p-4">Rate after session</div>
-          </div>
+          <HowItWorks />
         </section>
       </Suspense>
     </div>

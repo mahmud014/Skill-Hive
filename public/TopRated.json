@@ -1,0 +1,35 @@
+[
+  {
+    "id": 501,
+    "name": "Dr. Alamin Khan",
+    "skill": "Advanced Data Science (Python)",
+    "rating": 5.0,
+    "reviews": 155,
+    "location": "Online / Gulshan",
+    "rate": "BDT 1200/hr",
+    "image": "https://i.ibb.co.com/ZptTPDY0/Alamin-Khan.jpg",
+    "badge": "5-Star Mentor"
+  },
+  {
+    "id": 502,
+    "name": "Ayesha Rahman",
+    "skill": "UI/UX Design Masterclass (Figma)",
+    "rating": 4.9,
+    "reviews": 98,
+    "location": "Dhanmondi, Dhaka",
+    "rate": "BDT 950/hr",
+    "image": "https://i.ibb.co.com/Dh6LQV5/Ayesha-Rahman.jpg",
+    "badge": "Popular Choice"
+  },
+  {
+    "id": 503,
+    "name": "Rifat Hasan",
+    "skill": "Professional Photography (Studio)",
+    "rating": 4.8,
+    "reviews": 72,
+    "location": "Mirpur, Dhaka",
+    "rate": "BDT 700/hr",
+    "image": "https://i.ibb.co.com/vCxg1VBf/Rifat-Hasan.jpg",
+    "badge": "Verified Expert"
+  }
+]

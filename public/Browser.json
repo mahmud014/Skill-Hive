@@ -1,0 +1,58 @@
+[
+  {
+    "id": 101,
+    "title": "Web Development Basics (React)",
+    "category": "Technology & Coding",
+    "mentor": "Tanjib Ahmed",
+    "rating": 4.9,
+    "reviews": 82,
+    "location": "Mirpur, Dhaka",
+    "distance": 3.5,
+    "price": "BDT 800/hr",
+    "type": "paid",
+    "level": "Intermediate",
+    "image": "https://i.ibb.co.com/LdMJFLhv/Web-Development-Basics-React.jpg"
+  },
+  {
+    "id": 102,
+    "title": "Digital Painting for Beginners",
+    "category": "Art & Design",
+    "mentor": "Nusrat Jahan",
+    "rating": 4.7,
+    "reviews": 45,
+    "location": "Online Sessions Only",
+    "distance": 0,
+    "price": "Skill Exchange Only (Photography)",
+    "type": "free",
+    "level": "Beginner",
+    "image": "https://i.ibb.co.com/qF45hjQH/Digital-Painting-for-Beginners.jpg"
+  },
+  {
+    "id": 103,
+    "title": "Authentic Bengali Cuisine",
+    "category": "Cooking & Baking",
+    "mentor": "Rahima Begum",
+    "rating": 5.0,
+    "reviews": 15,
+    "location": "Dhanmondi, Dhaka",
+    "distance": 2.1,
+    "price": "BDT 500/session",
+    "type": "paid",
+    "level": "Beginner",
+    "image": "https://i.ibb.co.com/n8YxSrpn/Authentic-Bengali-Cuisine.jpg"
+  },
+  {
+    "id": 104,
+    "title": "Spoken English Practice",
+    "category": "Language Learning",
+    "mentor": "Farid Hossain",
+    "rating": 4.5,
+    "reviews": 110,
+    "location": "Gulshan, Dhaka",
+    "distance": 7.8,
+    "price": "BDT 600/hr",
+    "type": "paid",
+    "level": "Intermediate",
+    "image": "https://i.ibb.co.com/LdGf17X0/learning-foreign-languages.jpg"
+  }
+]
