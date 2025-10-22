@@ -5,6 +5,7 @@ import Hero from "../Components/Hero";
 import LoadingPage from "../Components/LoadingPage";
 import TopRated from "../Components/TopRated";
 import HowItWorks from "../Components/HowItWorks";
+import FeaturedCategories from "../Components/FeaturedCategories";
 
 const Home = () => {
   const skillsData = useLoaderData();
@@ -38,6 +39,9 @@ const Home = () => {
 
         <section className="mt-8">
           <HowItWorks />
+        </section>
+        <section>
+          <FeaturedCategories />
         </section>
       </Suspense>
     </div>
