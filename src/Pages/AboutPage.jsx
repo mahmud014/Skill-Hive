@@ -13,7 +13,6 @@ const AboutPage = () => {
   return (
     <div className="min-h-screen py-16">
       <div className="container mx-auto px-4 max-w-6xl">
-        {/* --- Hero/Introduction Section --- */}
         <header className="text-center mb-16 p-8 bg-white rounded-xl shadow-lg">
           <h1 className="text-5xl font-extrabold text-neutral mb-4">
             Welcome to <span className="text-yellow-500">SkillHive 🐝</span>
@@ -26,7 +25,6 @@ const AboutPage = () => {
           </p>
         </header>
 
-        {/* --- Mission Section --- */}
         <section className="mb-16">
           <div className="bg-primary text-white p-8 rounded-xl shadow-lg text-center">
             <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
@@ -36,14 +34,12 @@ const AboutPage = () => {
           </div>
         </section>
 
-        {/* --- Core Values Section --- */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-center text-neutral mb-8">
             Our Core Values
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Value 1: Reciprocity */}
             <div className="card bg-white shadow-xl p-6 text-center hover:bg-base-100 transition duration-300">
               <div className="flex justify-center mb-4">
                 <div className="p-4 rounded-full bg-secondary/10">
@@ -59,7 +55,6 @@ const AboutPage = () => {
               </p>
             </div>
 
-            {/* Local Focus */}
             <div className="card bg-white shadow-xl p-6 text-center hover:bg-base-100 transition duration-300">
               <div className="flex justify-center mb-4">
                 <div className="p-4 rounded-full bg-secondary/10">
@@ -75,7 +70,6 @@ const AboutPage = () => {
               </p>
             </div>
 
-            {/* Accessibility */}
             <div className="card bg-white shadow-xl p-6 text-center hover:bg-base-100 transition duration-300">
               <div className="flex justify-center mb-4">
                 <div className="p-4 rounded-full bg-secondary/10">
@@ -91,7 +85,6 @@ const AboutPage = () => {
               </p>
             </div>
 
-            {/*  Growth */}
             <div className="card bg-white shadow-xl p-6 text-center hover:bg-base-100 transition duration-300">
               <div className="flex justify-center mb-4">
                 <div className="p-4 rounded-full bg-secondary/10">
@@ -107,7 +100,6 @@ const AboutPage = () => {
           </div>
         </section>
 
-        {/* --- Call to Action/Join Us --- */}
         <section className="text-center">
           <div className="alert alert-info shadow-lg p-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <div className="flex items-center gap-2">

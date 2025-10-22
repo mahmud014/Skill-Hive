@@ -10,7 +10,6 @@ const TopRated = () => {
   return (
     <section className="py-10 bg-base-200">
       <div className="container mx-auto px-4">
-        {/* Header */}
         <h2 className="text-3xl sm:text-4xl font-bold text-center text-primary mb-2">
           ✨ Top Rated SkillHive Mentors
         </h2>
@@ -18,14 +17,12 @@ const TopRated = () => {
           Learn from the best, based on verified reviews and excellent service.
         </p>
 
-        {/* Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
           {topRatedData.map((provider) => (
             <div
               key={provider.id}
               className="card w-full max-w-sm bg-white shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col"
             >
-              {/* Avatar & Badge */}
               <figure className="relative px-10 pt-10">
                 <div className="avatar mx-auto">
                   <div className="w-24 h-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 overflow-hidden">

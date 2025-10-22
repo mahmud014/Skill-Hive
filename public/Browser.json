@@ -54,5 +54,33 @@
     "type": "paid",
     "level": "Intermediate",
     "image": "https://i.ibb.co.com/LdGf17X0/learning-foreign-languages.jpg"
+  },
+  {
+    "id": 105,
+    "title": "Acoustic Guitar for Absolute Beginners",
+    "category": "Music & Instruments",
+    "mentor": "Zahid Hassan",
+    "rating": 4.8,
+    "reviews": 65,
+    "location": "Banani, Dhaka",
+    "distance": 5.2,
+    "price": "BDT 750/hr",
+    "type": "paid",
+    "level": "Beginner",
+    "image": "https://i.ibb.co.com/sdRfcTSJ/Acoustic-Guitar-for-Absolute-Beginners.jpg"
+  },
+  {
+    "id": 106,
+    "title": "Yoga and Mindfulness for Stress Relief",
+    "category": "Health & Wellness",
+    "mentor": "Shaila Kabir",
+    "rating": 5.0,
+    "reviews": 30,
+    "location": "Online Sessions Only",
+    "distance": 0,
+    "price": "Skill Exchange Only (Gardening)",
+    "type": "free",
+    "level": "Intermediate",
+    "image": "https://i.ibb.co.com/7xVbThfD/Yoga-and-Mindfulness-for-Stress-Relief.jpg"
   }
 ]

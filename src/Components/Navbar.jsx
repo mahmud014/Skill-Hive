@@ -6,7 +6,6 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-sm px-4 py-3 sticky top-0 z-50">
       <div className="container mx-auto px-4 flex flex-wrap items-center justify-between">
-        {/* Logo */}
         <Link
           to="/"
           className="text-2xl font-bold text-yellow-500 hover:text-yellow-400 transition-colors"
@@ -14,7 +13,6 @@ const Navbar = () => {
           SkillHive 🐝
         </Link>
 
-        {/* Hamburger (Mobile) */}
         <input type="checkbox" id="menu-toggle" className="hidden peer" />
         <label
           htmlFor="menu-toggle"
@@ -23,7 +21,6 @@ const Navbar = () => {
           <FaBars />
         </label>
 
-        {/* Menu Links */}
         <div className="w-full md:w-auto hidden peer-checked:block md:block mt-3 md:mt-0">
           <ul className="flex flex-col md:flex-row gap-3 md:gap-6 text-gray-700 font-medium">
             <li>
@@ -47,11 +44,18 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/dasboard" className="nav-link">
-                Login/Register
+              <NavLink to="/profile" className="nav-link">
+                My Profile
               </NavLink>
             </li>
           </ul>
+        </div>
+        <div>
+          <button>
+            <Link to="/dasboard/login" className="btn btn-primary">
+              Login/Register
+            </Link>
+          </button>
         </div>
       </div>
     </nav>

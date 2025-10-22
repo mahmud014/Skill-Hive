@@ -6,7 +6,6 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white p-8 sm:p-10 mt-8">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {/* Brand + Contact */}
         <div className="text-center sm:text-left">
           <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-yellow-500">
             SkillHive 🐝
@@ -31,7 +30,6 @@ const Footer = () => {
           </a>
         </div>
 
-        {/* Quick Links */}
         <div className="text-center sm:text-left">
           <h3 className="text-xl sm:text-2xl font-semibold mb-2">
             Quick Links
@@ -60,7 +58,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Social & Newsletter */}
         <div className="text-center sm:text-left">
           <h3 className="text-xl sm:text-2xl font-semibold mb-2">Follow Us</h3>
           <div className="flex justify-center sm:justify-start space-x-4 mb-4 text-lg">

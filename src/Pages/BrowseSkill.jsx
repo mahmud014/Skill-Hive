@@ -10,7 +10,6 @@ const BrowseSkill = () => {
     sortBy: "match",
   });
 
-  // Filter and sort skills
   const filterAndSortSkills = useCallback(() => {
     if (!browserData) return;
 
@@ -23,7 +22,6 @@ const BrowseSkill = () => {
         : true
     );
 
-    // Sorting
     filtered.sort((a, b) => {
       if (filters.sortBy === "rating") return b.rating - a.rating;
       return 0;
@@ -43,7 +41,6 @@ const BrowseSkill = () => {
 
   return (
     <div className="px-4 py-6 max-w-7xl mx-auto">
-      {/* Header */}
       <header className="text-center mb-6">
         <h1 className="text-3xl md:text-4xl font-bold mb-2">
           Explore Skills & Mentors
@@ -66,7 +63,6 @@ const BrowseSkill = () => {
         </div>
       </header>
 
-      {/* Skills Grid */}
       <main>
         <div className="flex flex-col md:flex-row justify-between items-center mb-4">
           <span className="mb-2 md:mb-0">

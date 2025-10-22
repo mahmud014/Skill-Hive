@@ -8,6 +8,9 @@ import BrowseSkill from "../Pages/BrowseSkill";
 import AboutPage from "../Pages/AboutPage";
 import ContactPage from "../Pages/ContactPage";
 import Login from "../Pages/Login";
+import DasBoard from "../Roots/DasBoard";
+import Register from "../Pages/Register";
+import MyProfile from "../Pages/MyProfile";
 
 export const router = createBrowserRouter([
   {
@@ -42,8 +45,22 @@ export const router = createBrowserRouter([
         element: <ContactPage />,
       },
       {
-        path: "dasboard",
+        path: "/profile",
+        element: <MyProfile />,
+      },
+    ],
+  },
+  {
+    path: "dasboard",
+    element: <DasBoard />,
+    children: [
+      {
+        path: "/dasboard/login",
         element: <Login />,
+      },
+      {
+        path: "/dasboard/register",
+        element: <Register />,
       },
     ],
   },
