@@ -1,9 +1,28 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import { FaEye, FaRegEyeSlash } from "react-icons/fa";
 import { Link } from "react-router";
+import { AuthContext } from "../Provider/AuthProvider";
 
 const Login = () => {
   const [show, setShow] = useState(false);
+
+  const { singIn } = use(AuthContext);
+  const handleLogin = (e) => {
+    e.preventDefault();
+    const form = e.target;
+
+    const email = form.email.value;
+    const password = form.password.value;
+    singIn(email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        alert(errorCode);
+      });
+  };
 
   return (
     <div className="flex items-center justify-center min-h-screen p-4">
@@ -18,28 +37,32 @@ const Login = () => {
           </p>
         </div>
 
-        <form className="space-y-5">
+        <form onSubmit={handleLogin} className="space-y-5">
           <div>
+            {/* Email */}
             <label className="label">
               <span className="label-text font-semibold">Email</span>
             </label>
             <input
               type="email"
+              name="email"
               placeholder="Enter your email"
-              className="input input-bordered input-primary w-full focus:ring-2 focus:ring-primary/50 transition-all"
+              className="input input-bordered input-primary w-full outline-none"
               required
             />
           </div>
 
           <div>
+            {/* password */}
             <label className="label">
               <span className="label-text font-semibold">Password</span>
             </label>
             <div className="relative">
               <input
+                name="password"
                 type={show ? "text" : "password"}
                 placeholder="Enter your password"
-                className="input input-bordered input-primary w-full focus:ring-2 focus:ring-primary/50 transition-all"
+                className="input input-bordered input-primary w-full outline-none"
                 required
               />
               <button

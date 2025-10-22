@@ -1,8 +1,20 @@
-import React from "react";
+import React, { use } from "react";
 import { FaBars } from "react-icons/fa";
 import { Link, NavLink } from "react-router";
+import { AuthContext } from "../Provider/AuthProvider";
 
 const Navbar = () => {
+  const { user, logOut } = use(AuthContext);
+  const haldleLogOut = () => {
+    logOut()
+      .then(() => {
+        alert("Loged Out success");
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        alert(errorCode);
+      });
+  };
   return (
     <nav className="bg-white shadow-sm px-4 py-3 sticky top-0 z-50">
       <div className="container mx-auto px-4 flex flex-wrap items-center justify-between">
@@ -50,12 +62,17 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+        <div>{user && user.email}</div>
         <div>
-          <button>
+          {user ? (
+            <button onClick={haldleLogOut} className="btn btn-primary">
+              LogOut
+            </button>
+          ) : (
             <Link to="/dasboard/login" className="btn btn-primary">
               Login/Register
             </Link>
-          </button>
+          )}
         </div>
       </div>
     </nav>

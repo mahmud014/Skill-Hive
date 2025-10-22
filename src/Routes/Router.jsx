@@ -11,6 +11,7 @@ import Login from "../Pages/Login";
 import DasBoard from "../Roots/DasBoard";
 import Register from "../Pages/Register";
 import MyProfile from "../Pages/MyProfile";
+import PrivateRoute from "../Provider/PrivateRoute";
 
 export const router = createBrowserRouter([
   {
@@ -21,12 +22,6 @@ export const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
-        loader: () => fetch("/Data.json"),
-        hydrateFallbackElement: <LoadingPage />,
-      },
-      {
-        path: "skill/:id",
-        element: <SkillDetails />,
         loader: () => fetch("/Data.json"),
         hydrateFallbackElement: <LoadingPage />,
       },
@@ -49,6 +44,16 @@ export const router = createBrowserRouter([
         element: <MyProfile />,
       },
     ],
+  },
+  {
+    path: "skill/:id",
+    element: (
+      <PrivateRoute>
+        <SkillDetails />
+      </PrivateRoute>
+    ),
+    loader: () => fetch("/Data.json"),
+    hydrateFallbackElement: <LoadingPage />,
   },
   {
     path: "dasboard",

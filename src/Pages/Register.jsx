@@ -1,9 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, use } from "react";
 import { FaEye, FaRegEyeSlash } from "react-icons/fa";
 import { Link } from "react-router";
+import { AuthContext } from "../Provider/AuthProvider";
 
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const { createUser, setUser } = use(AuthContext);
+  const handleRegister = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const name = form.name.value;
+    const email = form.email.value;
+    const photo = form.photo.value;
+    const password = form.password.value;
+
+    createUser(email, password)
+      .then((result) => {
+        const user = result.user;
+
+        setUser(user);
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        alert(errorCode);
+      });
+  };
   return (
     <div className="flex items-center justify-center min-h-screen  p-4">
       <div className="card w-full max-w-md bg-white rounded-2xl shadow-2xl p-8 sm:p-10 animate__animated animate__fadeInUp">
@@ -17,7 +38,7 @@ const Register = () => {
           </p>
         </div>
 
-        <form className="space-y-5">
+        <form onSubmit={handleRegister} className="space-y-5">
           {/* Name */}
           <div>
             <label className="label">
