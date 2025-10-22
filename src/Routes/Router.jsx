@@ -5,6 +5,9 @@ import ErrorPage from "../Components/ErrorPage";
 import LoadingPage from "../Components/LoadingPage";
 import SkillDetails from "../Pages/SkillDetails";
 import BrowseSkill from "../Pages/BrowseSkill";
+import AboutPage from "../Pages/AboutPage";
+import ContactPage from "../Pages/ContactPage";
+import Login from "../Pages/Login";
 
 export const router = createBrowserRouter([
   {
@@ -29,6 +32,18 @@ export const router = createBrowserRouter([
         element: <BrowseSkill />,
         loader: () => fetch("/Browser.json"),
         hydrateFallbackElement: <LoadingPage />,
+      },
+      {
+        path: "about",
+        element: <AboutPage />,
+      },
+      {
+        path: "contact",
+        element: <ContactPage />,
+      },
+      {
+        path: "dasboard",
+        element: <Login />,
       },
     ],
   },

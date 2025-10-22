@@ -8,7 +8,9 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* Brand + Contact */}
         <div className="text-center sm:text-left">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-2">SkillHive 🐝</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-yellow-500">
+            SkillHive 🐝
+          </h2>
           <p className="mb-2 text-gray-200">
             A local platform to share and exchange skills.
           </p>
@@ -36,24 +38,24 @@ const Footer = () => {
           </h3>
           <ul className="space-y-1 text-gray-300 text-sm sm:text-base">
             <li>
-              <a href="#" className="hover:text-yellow-400">
+              <Link to={"/"} className="hover:text-yellow-400">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-yellow-400">
+              <Link to={"/browseskills"} className="hover:text-yellow-400">
                 Browse Skills
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-yellow-400">
+              <Link to={"/about"} className="hover:text-yellow-400">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-yellow-400">
+              <Link to={"/contact"} className="hover:text-yellow-400">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

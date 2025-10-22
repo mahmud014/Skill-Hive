@@ -55,7 +55,7 @@ const BrowseSkill = () => {
             name="searchTerm"
             value={filters.searchTerm}
             onChange={handleFilterChange}
-            className="input input-bordered w-full md:w-80"
+            className="input input-bordered w-full md:w-80 text-gray-400"
           />
           <button
             onClick={filterAndSortSkills}
