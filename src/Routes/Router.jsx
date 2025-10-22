@@ -2,6 +2,8 @@ import { createBrowserRouter } from "react-router";
 import Root from "../Roots/Root";
 import Home from "../Pages/Home";
 import ErrorPage from "../Components/ErrorPage";
+import LoadingPage from "../Components/LoadingPage";
+import SkillDetails from "../Pages/SkillDetails";
 
 export const router = createBrowserRouter([
   {
@@ -13,6 +15,13 @@ export const router = createBrowserRouter([
         index: true,
         element: <Home />,
         loader: () => fetch("/Data.json"),
+        hydrateFallbackElement: <LoadingPage />,
+      },
+      {
+        path: "skill/:id",
+        element: <SkillDetails />,
+        loader: () => fetch("/Data.json"),
+        hydrateFallbackElement: <LoadingPage />,
       },
     ],
   },

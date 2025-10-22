@@ -1,9 +1,10 @@
 import React from "react";
+import { FaBars } from "react-icons/fa";
 import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
   return (
-    <nav className="bg-white shadow-sm px-4 py-3">
+    <nav className="bg-white shadow-sm px-4 py-3 sticky top-0 z-50">
       <div className="container mx-auto px-4 flex flex-wrap items-center justify-between">
         {/* Logo */}
         <Link
@@ -19,7 +20,7 @@ const Navbar = () => {
           htmlFor="menu-toggle"
           className="text-gray-600 text-2xl cursor-pointer md:hidden block"
         >
-          ☰
+          <FaBars />
         </label>
 
         {/* Menu Links */}

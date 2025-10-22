@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Learn and Share Skills Locally",
+    "desc": "Connect with others, exchange knowledge, and grow together.",
+    "image": "https://i.ibb.co.com/JjXJpghb/Learn-and-Share-Skills-Locally.jpg",
+    "buttonText": "Explore Skills"
+  },
+  {
+    "id": 2,
+    "title": "Find Experts Around You",
+    "desc": "Explore people skilled in art, coding, cooking, and more!",
+    "image": "https://i.ibb.co.com/LDptB9yv/Find-Experts-Around-You.jpg",
+    "buttonText": "Find Experts"
+  },
+  {
+    "id": 3,
+    "title": "Teach What You Love ❤️",
+    "desc": "Share your passion with the SkillHive community.",
+    "image": "https://i.ibb.co.com/XrfmXhmM/Teach-What-You-Love.jpg",
+    "buttonText": "Start Teaching"
+  }
+]
