@@ -26,7 +26,7 @@ Users can post what they can teach and what they want to learn, making skill-sha
 ✅ **Browse Skills Section** – Explore and filter various skill offers  
 ✅ **Skill Details Page** – View complete details of a selected skill  
 ✅ **User Authentication** – Login and Register using Firebase Authentication (Email & Google OAuth)  
-✅ **Protected Routes** – Prevent access to restricted pages without login
+✅ **Protected Routes** – Prevent access to restricted pages without login  
 ✅ **Profile Page** – Update user name, email, and profile picture  
 ✅ **Booking Form** – Submit requests to learn a specific skill  
 ✅ **Toast Notifications** – Show success/error messages using React Hot Toast  
