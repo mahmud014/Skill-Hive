@@ -64,15 +64,15 @@ export const router = createBrowserRouter([
     hydrateFallbackElement: <LoadingPage />,
   },
   {
-    path: "dasboard",
+    path: "dashboard",
     element: <DasBoard />,
     children: [
       {
-        path: "/dasboard/login",
+        path: "/dashboard/login",
         element: <Login />,
       },
       {
-        path: "/dasboard/register",
+        path: "/dashboard/register",
         element: <Register />,
       },
     ],

@@ -124,14 +124,14 @@ const Login = () => {
           <div className="divider">OR</div>
           <button
             onClick={handleGoogle}
-            className="btn btn-google btn-outline w-full"
+            className="btn btn-google flex justify-center items-center gap-2 btn-outline w-full"
           >
             <FcGoogle size={24} />
             Continue with Google
           </button>
           <p>
             Don't have an Account? Please{" "}
-            <Link to={"/dasboard/register"}>
+            <Link to={"/dashboard/register"}>
               <span className="link link-primary">Register</span>
             </Link>
           </p>

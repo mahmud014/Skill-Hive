@@ -3,11 +3,13 @@ import { FaEye, FaRegEyeSlash } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
 import toast from "react-hot-toast";
+import { FcGoogle } from "react-icons/fc";
 
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
-  const { createUser, setUser, updateUser } = use(AuthContext);
+  const { createUser, setUser, updateUser, loginWithGoogle } = use(AuthContext);
   const [nameError, setNameError] = useState("");
+  const [passwordError, setPasswordError] = useState("");
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -25,6 +27,15 @@ const Register = () => {
     const email = form.email.value;
     const photo = form.photo.value;
     const password = form.password.value;
+    const passwordPattern =
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*(),.?":{}|<>]).{6,}$/;
+
+    if (!passwordPattern.test(password)) {
+      setPasswordError("Password must be at least 6 characters and strong.");
+      return;
+    } else {
+      setPasswordError("");
+    }
 
     createUser(email, password)
       .then((result) => {
@@ -39,6 +50,17 @@ const Register = () => {
             toast.error(error.code);
             setUser(user);
           });
+      })
+      .catch((error) => {
+        toast.error(error.code);
+      });
+  };
+
+  const handleGoogleLogin = () => {
+    loginWithGoogle()
+      .then(() => {
+        toast.success("Logged in successfully!");
+        navigate(`${location.state ? location.state : "/"}`);
       })
       .catch((error) => {
         toast.error(error.code);
@@ -70,7 +92,9 @@ const Register = () => {
               className="input input-bordered input-primary w-full outline-none"
               required
             />
-            {nameError && <p className="text-red-500">{nameError}</p>}
+            {nameError && (
+              <p className="text-red-500 text-sm mt-1">{nameError}</p>
+            )}
           </div>
 
           {/* Email */}
@@ -113,6 +137,9 @@ const Register = () => {
                 className="input input-bordered input-primary w-full outline-none"
                 required
               />
+              {passwordError && (
+                <p className="text-red-500 text-sm mt-1">{passwordError}</p>
+              )}
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
@@ -127,7 +154,7 @@ const Register = () => {
             <input
               type="checkbox"
               id="terms"
-              className="checkbox checkbox-primary mr-2"
+              className="checkbox mr-2"
               required
             />
             <label htmlFor="terms" className="text-gray-600">
@@ -143,11 +170,18 @@ const Register = () => {
             Register
           </button>
         </form>
-
+        <div className="divider">OR</div>
+        <button
+          onClick={handleGoogleLogin}
+          className="btn btn-google flex justify-center items-center gap-2 btn-outline w-full"
+        >
+          <FcGoogle size={24} />
+          Continue with Google
+        </button>
         <p className="text-center text-sm mt-6 text-gray-500">
           Already have an account?{" "}
           <Link
-            to="/dasboard/login"
+            to="/dashboard/login"
             className="link link-primary font-semibold"
           >
             Login

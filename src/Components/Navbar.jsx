@@ -84,7 +84,7 @@ const Navbar = () => {
                 LogOut
               </button>
             ) : (
-              <Link to="/dasboard/login" className="btn btn-primary">
+              <Link to="/dashboard/login" className="btn btn-primary">
                 Login/Register
               </Link>
             )}
