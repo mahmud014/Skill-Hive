@@ -10,7 +10,7 @@ const Login = () => {
   const [error, setError] = useState("");
 
   const emailRef = useRef();
-  const { singIn, setUser, loginWithGoogle, resetPassword } = use(AuthContext);
+  const { signIn, setUser, loginWithGoogle, resetPassword } = use(AuthContext);
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -21,7 +21,7 @@ const Login = () => {
 
     const email = form.email.value;
     const password = form.password.value;
-    singIn(email, password)
+    signIn(email, password)
       .then((result) => {
         const user = result.user;
         setUser(user);
@@ -29,7 +29,8 @@ const Login = () => {
       })
       .catch((error) => {
         const errorCode = error.code;
-        setError(errorCode);
+        if (errorCode === "auth/invalid-credential")
+          setError("Invalid credentials. Please try again.");
       });
   };
 

@@ -22,7 +22,7 @@ const AuthProvider = ({ children }) => {
     return createUserWithEmailAndPassword(auth, email, password);
   };
 
-  const singIn = (email, password) => {
+  const signIn = (email, password) => {
     setLoading(true);
     return signInWithEmailAndPassword(auth, email, password);
   };
@@ -59,14 +59,16 @@ const AuthProvider = ({ children }) => {
     setUser,
     createUser,
     logOut,
-    singIn,
+    signIn,
     loading,
     setLoading,
     updateUser,
     loginWithGoogle,
     resetPassword,
   };
-  return <AuthContext value={authData}>{children}</AuthContext>;
+  return (
+    <AuthContext.Provider value={authData}>{children}</AuthContext.Provider>
+  );
 };
 
 export default AuthProvider;

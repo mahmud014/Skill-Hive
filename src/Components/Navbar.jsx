@@ -3,22 +3,24 @@ import { FaBars } from "react-icons/fa";
 import { Link, NavLink } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
 import profileIcon from "../assets/profile.png";
+import toast from "react-hot-toast";
 const Navbar = () => {
   const { user, logOut } = use(AuthContext);
   const haldleLogOut = () => {
     logOut()
       .then(() => {
-        alert("Loged Out success");
+        toast.success("Loged Out success");
       })
       .catch((error) => {
         const errorCode = error.code;
-        alert(errorCode);
+        toast.error(errorCode);
       });
   };
   return (
     <nav className="bg-white shadow-sm px-4 py-3 sticky top-0 z-50">
       <div className="container mx-auto px-4 flex flex-wrap items-center justify-between">
         <Link
+          title="SkillHive"
           to="/"
           className="text-2xl font-bold text-yellow-500 hover:text-yellow-400 transition-colors"
         >
@@ -75,7 +77,8 @@ const Navbar = () => {
             <img
               className="w-12 h-12 rounded-full"
               src={`${user ? user.photoURL || profileIcon : profileIcon}`}
-              alt=""
+              alt={user?.displayName || "User profile"}
+              title={user?.displayName || "Guest"}
             />
           </div>
           <div>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import toast from "react-hot-toast";
 import {
   FaPhoneAlt,
   FaEnvelope,
@@ -19,7 +20,9 @@ const ContactPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`Thank you, ${formData.name}! We have received your message.`);
+    toast.success(
+      `Thank you, ${formData.name}! We have received your message.`
+    );
     setFormData({ name: "", email: "", message: "" });
   };
 
