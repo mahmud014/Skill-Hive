@@ -17,6 +17,7 @@ const Home = () => {
 
   return (
     <div className="px-4 sm:px-6 lg:px-8">
+      <title>SkillHive - Home</title>
       <Suspense fallback={<LoadingPage />}>
         <section className="mb-8">
           <Hero />

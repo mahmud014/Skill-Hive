@@ -68,6 +68,7 @@ const Register = () => {
   };
   return (
     <div className="flex items-center justify-center min-h-screen  p-4">
+      <title>SkillHive - Register Page</title>
       <div className="card w-full max-w-md bg-white rounded-2xl shadow-2xl p-8 sm:p-10 animate__animated animate__fadeInUp">
         <div className="text-center mb-6">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-primary">

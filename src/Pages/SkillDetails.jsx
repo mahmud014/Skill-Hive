@@ -42,6 +42,7 @@ const SkillDetails = () => {
         <Navbar></Navbar>
       </header>
       <div className="max-w-5xl mx-auto my-10 px-4 sm:px-6 lg:px-8">
+        <title>{skill.skillName}</title>
         <img
           src={skill.image}
           alt={skill.skillName}

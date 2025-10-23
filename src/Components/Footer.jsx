@@ -1,5 +1,13 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaPinterest,
+  FaTwitter,
+} from "react-icons/fa";
+import { SlSocialPintarest } from "react-icons/sl";
 import { Link } from "react-router";
 
 const Footer = () => {
@@ -62,21 +70,50 @@ const Footer = () => {
           <h3 className="text-xl sm:text-2xl font-semibold mb-2">Follow Us</h3>
           <div className="flex justify-center sm:justify-start space-x-4 mb-4 text-lg">
             <Link
-              to={"https://x.com/"}
+              to={"https://github.com/mahmud014/"}
+              target="_blank"
               className="hover:text-blue-500 flex gap-2"
             >
-              <FaTwitter size={24} />
-              Twitter
+              <FaGithub size={24} />
+              Github
             </Link>
             <Link
               to={"https://facebook.com/"}
+              target="_blank"
               className="hover:text-blue-700 flex gap-2"
             >
               <FaFacebook size={24} />
               Facebook
             </Link>
             <Link
+              to={"https://www.linkedin.com/"}
+              target="_blank"
+              className="hover:text-pink-500 flex gap-2"
+            >
+              <FaLinkedin size={24} />
+              LinkedIn
+            </Link>
+          </div>
+          <div className="flex justify-center sm:justify-start space-x-4 mb-4 text-lg">
+            <Link
+              to={"https://x.com/"}
+              target="_blank"
+              className="hover:text-blue-500 flex gap-2"
+            >
+              <FaTwitter size={24} />
+              Twitter
+            </Link>
+            <Link
+              to={"https://pinterest.com/"}
+              target="_blank"
+              className="hover:text-blue-700 flex gap-2"
+            >
+              <FaPinterest size={24} />
+              Pinterest
+            </Link>
+            <Link
               to={"https://www.instagram.com/"}
+              target="_blank"
               className="hover:text-pink-500 flex gap-2"
             >
               <FaInstagram size={24} />

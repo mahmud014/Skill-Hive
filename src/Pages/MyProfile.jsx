@@ -26,6 +26,7 @@ const MyProfile = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center  py-10">
+      <title>SkillHive - My Profile</title>
       <div className="card w-full max-w-3xl bg-white shadow-2xl rounded-2xl overflow-hidden">
         {/* Header Section */}
         <div className="relative h-40 bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500">

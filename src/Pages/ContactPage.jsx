@@ -27,7 +27,8 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-base-100 py-16">
+    <div className="min-h-screen py-16">
+      <title>SkillHive - Contact Us</title>
       <div className="container mx-auto px-4 max-w-6xl">
         <header className="text-center mb-12">
           <h1 className="text-5xl font-extrabold text-neutral mb-3">

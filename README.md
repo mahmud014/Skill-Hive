@@ -1,16 +1,51 @@
-# React + Vite
+# 🐝 SkillHive
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**SkillHive** is an interactive web platform where individuals can **offer**, **learn**, and **exchange** skills within their local community.  
+Whether it’s guitar lessons, coding help, yoga training, or language exchange — users can browse listings, rate experiences, and connect with local skill providers.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 **Live Site**
 
-## React Compiler
+🔗 [https://skillhive-282db.web.app/](https://skillhive-282db.web.app/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🎯 **Project Purpose**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The purpose of this project is to create a community-based skill exchange platform  
+that encourages people to **share their knowledge** and **learn from others** in their local area.
+
+Users can post what they can teach and what they want to learn, making skill-sharing simple and rewarding.
+
+---
+
+## ✨ **Key Features**
+
+✅ **Responsive Design** – Built with Tailwind CSS and DaisyUI for modern, mobile-friendly UI  
+✅ **Browse Skills Section** – Explore and filter various skill offers  
+✅ **Skill Details Page** – View complete details of a selected skill  
+✅ **User Authentication** – Login and Register using Firebase Authentication (Email & Google OAuth)  
+✅ **Protected Routes** – Prevent access to restricted pages without login
+✅ **Profile Page** – Update user name, email, and profile picture  
+✅ **Booking Form** – Submit requests to learn a specific skill  
+✅ **Toast Notifications** – Show success/error messages using React Hot Toast  
+✅ **Slider / Carousel** – Swiper.js used for home banner section  
+✅ **Smooth Animation** – AOS for scroll-based animations
+
+---
+
+## 🧩 **Technologies & npm Packages Used**
+
+| Category               | Packages / Tools        |
+| ---------------------- | ----------------------- |
+| **Frontend Framework** | React (Vite)            |
+| **Routing**            | react-router-dom        |
+| **Styling**            | Tailwind CSS, DaisyUI   |
+| **Icons**              | react-icons             |
+| **Authentication**     | Firebase                |
+| **Notifications**      | react-hot-toast         |
+| **Animations**         | AOS (Animate On Scroll) |
+| **Slider / Carousel**  | Swiper.js               |
+
+---

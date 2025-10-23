@@ -40,7 +40,8 @@ const BrowseSkill = () => {
   };
 
   return (
-    <div className="px-4 py-6 max-w-7xl mx-auto">
+    <div className="px-4 py-6 max-w-7xl mx-auto min-h-screen">
+      <title>SkillHive - BrowserSkill</title>
       <header className="text-center mb-6">
         <h1 className="text-3xl md:text-4xl font-bold mb-2">
           Explore Skills & Mentors

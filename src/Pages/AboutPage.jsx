@@ -12,6 +12,7 @@ const AboutPage = () => {
 
   return (
     <div className="min-h-screen py-16">
+      <title>SkillHive - About</title>
       <div className="container mx-auto px-4 max-w-6xl">
         <header className="text-center mb-16 p-8 bg-white rounded-xl shadow-lg">
           <h1 className="text-5xl font-extrabold text-neutral mb-4">
