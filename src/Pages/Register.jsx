@@ -1,15 +1,25 @@
 import React, { useState, use } from "react";
 import { FaEye, FaRegEyeSlash } from "react-icons/fa";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
 
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
-  const { createUser, setUser } = use(AuthContext);
+  const { createUser, setUser, updateUser } = use(AuthContext);
+  const [nameError, setNameError] = useState("");
+
+  const navigate = useNavigate();
+
   const handleRegister = (e) => {
     e.preventDefault();
     const form = e.target;
     const name = form.name.value;
+    if (name.length < 5) {
+      setNameError("Name shuld be more then 5 character");
+      return;
+    } else {
+      setNameError("");
+    }
     const email = form.email.value;
     const photo = form.photo.value;
     const password = form.password.value;
@@ -17,8 +27,16 @@ const Register = () => {
     createUser(email, password)
       .then((result) => {
         const user = result.user;
-
-        setUser(user);
+        updateUser({ displayName: name, photoURL: photo })
+          .then(() => {
+            setUser({ ...user, displayName: name, photoURL: photo });
+            navigate("/");
+          })
+          .catch((error) => {
+            const errorCode = error.code;
+            alert(errorCode);
+            setUser(user);
+          });
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -51,6 +69,7 @@ const Register = () => {
               className="input input-bordered input-primary w-full outline-none"
               required
             />
+            {nameError && <p className="text-red-500">{nameError}</p>}
           </div>
 
           {/* Email */}

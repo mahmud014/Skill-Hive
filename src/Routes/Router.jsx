@@ -27,7 +27,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "browseskills",
-        element: <BrowseSkill />,
+        element: (
+          <PrivateRoute>
+            <BrowseSkill />
+          </PrivateRoute>
+        ),
         loader: () => fetch("/Browser.json"),
         hydrateFallbackElement: <LoadingPage />,
       },
@@ -41,7 +45,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "/profile",
-        element: <MyProfile />,
+        element: (
+          <PrivateRoute>
+            <MyProfile />
+          </PrivateRoute>
+        ),
       },
     ],
   },

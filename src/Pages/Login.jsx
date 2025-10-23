@@ -1,12 +1,17 @@
 import React, { use, useState } from "react";
 import { FaEye, FaRegEyeSlash } from "react-icons/fa";
-import { Link } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
 
 const Login = () => {
   const [show, setShow] = useState(false);
+  const [error, setError] = useState("");
 
-  const { singIn } = use(AuthContext);
+  const { singIn, setUser } = use(AuthContext);
+
+  const location = useLocation();
+  const navigate = useNavigate();
+
   const handleLogin = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -16,11 +21,12 @@ const Login = () => {
     singIn(email, password)
       .then((result) => {
         const user = result.user;
-        console.log(user);
+        setUser(user);
+        navigate(`${location.state ? location.state : "/"}`);
       })
       .catch((error) => {
         const errorCode = error.code;
-        alert(errorCode);
+        setError(errorCode);
       });
   };
 
@@ -80,7 +86,7 @@ const Login = () => {
               Forgot password?
             </Link>
           </div>
-
+          {error && <p className="text-red-500">{error}</p>}
           <button
             type="submit"
             className="btn btn-primary w-full py-3 text-lg font-semibold hover:scale-105 transition-transform shadow-lg"

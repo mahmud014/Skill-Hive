@@ -2,7 +2,7 @@ import React, { use } from "react";
 import { FaBars } from "react-icons/fa";
 import { Link, NavLink } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
-
+import profileIcon from "../assets/profile.png";
 const Navbar = () => {
   const { user, logOut } = use(AuthContext);
   const haldleLogOut = () => {
@@ -56,13 +56,23 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/profile" className="nav-link">
-                My Profile
-              </NavLink>
+              {user ? (
+                <NavLink to="/profile" className="nav-link">
+                  My Profile
+                </NavLink>
+              ) : (
+                ""
+              )}
             </li>
           </ul>
         </div>
-        <div>{user && user.email}</div>
+        <div>
+          <img
+            className="w-12 h-12 rounded-full"
+            src={`${user ? user.photoURL : profileIcon}`}
+            alt=""
+          />
+        </div>
         <div>
           {user ? (
             <button onClick={haldleLogOut} className="btn btn-primary">
