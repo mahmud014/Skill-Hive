@@ -14,7 +14,7 @@ const Root = () => {
           <Navbar />
         </nav>
       </header>
-      <main className="container mx-auto px-4 py-6">
+      <main className="px-4 py-6">
         {state == "loading" ? <LoadingPage /> : <Outlet />}
       </main>
       <Footer />

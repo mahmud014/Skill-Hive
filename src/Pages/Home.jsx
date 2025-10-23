@@ -23,7 +23,7 @@ const Home = () => {
         </section>
 
         <section>
-          <h2 className="text-2xl sm:text-3xl font-semibold my-8 sm:my-10 text-center sm:text-left">
+          <h2 className="max-w-7xl mx-auto text-2xl sm:text-3xl font-semibold my-8 sm:my-10  text-left">
             Popular Skills
           </h2>
           <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

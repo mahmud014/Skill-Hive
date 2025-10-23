@@ -1,7 +1,8 @@
 import React, { useState, use } from "react";
 import { FaEye, FaRegEyeSlash } from "react-icons/fa";
-import { Link, useNavigate } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
+import toast from "react-hot-toast";
 
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -9,6 +10,7 @@ const Register = () => {
   const [nameError, setNameError] = useState("");
 
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -30,17 +32,16 @@ const Register = () => {
         updateUser({ displayName: name, photoURL: photo })
           .then(() => {
             setUser({ ...user, displayName: name, photoURL: photo });
-            navigate("/");
+            toast.success("Account created successfully!");
+            navigate(`${location.state ? location.state : "/"}`);
           })
           .catch((error) => {
-            const errorCode = error.code;
-            alert(errorCode);
+            toast.error(error.code);
             setUser(user);
           });
       })
       .catch((error) => {
-        const errorCode = error.code;
-        alert(errorCode);
+        toast.error(error.code);
       });
   };
   return (

@@ -1,13 +1,16 @@
-import React, { use, useState } from "react";
+import React, { use, useRef, useState } from "react";
 import { FaEye, FaRegEyeSlash } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
+import { FcGoogle } from "react-icons/fc";
+import toast from "react-hot-toast";
 
 const Login = () => {
   const [show, setShow] = useState(false);
   const [error, setError] = useState("");
 
-  const { singIn, setUser } = use(AuthContext);
+  const emailRef = useRef();
+  const { singIn, setUser, loginWithGoogle, resetPassword } = use(AuthContext);
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -30,6 +33,30 @@ const Login = () => {
       });
   };
 
+  const handleGoogle = () => {
+    loginWithGoogle()
+      .then((result) => {
+        const user = result.user;
+        setUser(user);
+        toast.success("Logged in with Google");
+        navigate(`${location.state ? location.state : "/"}`);
+      })
+      .catch((err) => toast.error(err.message));
+  };
+  const handleReset = () => {
+    const email = emailRef.current.value;
+    if (!email) {
+      return toast.error("Enter email for reset");
+    }
+    resetPassword(email)
+      .then(() => {
+        toast.success("Password reset email sent");
+        setTimeout(() => {
+          window.open("https://mail.google.com", "_blank");
+        }, 1500);
+      })
+      .catch((error) => toast.error(error.message));
+  };
   return (
     <div className="flex items-center justify-center min-h-screen p-4">
       <div className="card w-full max-w-md bg-white rounded-2xl shadow-2xl p-8 sm:p-10 animate__animated animate__fadeInUp">
@@ -52,6 +79,7 @@ const Login = () => {
             <input
               type="email"
               name="email"
+              ref={emailRef}
               placeholder="Enter your email"
               className="input input-bordered input-primary w-full outline-none"
               required
@@ -82,7 +110,7 @@ const Login = () => {
           </div>
 
           <div className="flex text-sm">
-            <Link to="/forgot-password" className="link link-primary">
+            <Link onClick={handleReset} className="link link-primary">
               Forgot password?
             </Link>
           </div>
@@ -92,6 +120,14 @@ const Login = () => {
             className="btn btn-primary w-full py-3 text-lg font-semibold hover:scale-105 transition-transform shadow-lg"
           >
             Login
+          </button>
+          <div className="divider">OR</div>
+          <button
+            onClick={handleGoogle}
+            className="btn btn-google btn-outline w-full"
+          >
+            <FcGoogle size={24} />
+            Continue with Google
           </button>
           <p>
             Don't have an Account? Please{" "}

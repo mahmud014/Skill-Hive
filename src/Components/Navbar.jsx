@@ -41,9 +41,13 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/browseskills" className="nav-link">
-                Browse Skills
-              </NavLink>
+              {user ? (
+                <NavLink to="/browseskills" className="nav-link">
+                  Browse Skills
+                </NavLink>
+              ) : (
+                ""
+              )}
             </li>
             <li>
               <NavLink to="/about" className="nav-link">
@@ -66,23 +70,25 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div>
-          <img
-            className="w-12 h-12 rounded-full"
-            src={`${user ? user.photoURL : profileIcon}`}
-            alt=""
-          />
-        </div>
-        <div>
-          {user ? (
-            <button onClick={haldleLogOut} className="btn btn-primary">
-              LogOut
-            </button>
-          ) : (
-            <Link to="/dasboard/login" className="btn btn-primary">
-              Login/Register
-            </Link>
-          )}
+        <div className="flex justify-center items-center gap-4">
+          <div>
+            <img
+              className="w-12 h-12 rounded-full"
+              src={`${user ? user.photoURL || profileIcon : profileIcon}`}
+              alt=""
+            />
+          </div>
+          <div>
+            {user ? (
+              <button onClick={haldleLogOut} className="btn btn-primary">
+                LogOut
+              </button>
+            ) : (
+              <Link to="/dasboard/login" className="btn btn-primary">
+                Login/Register
+              </Link>
+            )}
+          </div>
         </div>
       </div>
     </nav>
