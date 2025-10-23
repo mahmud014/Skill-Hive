@@ -44,7 +44,9 @@ const Register = () => {
           .then(() => {
             setUser({ ...user, displayName: name, photoURL: photo });
             toast.success("Account created successfully!");
-            navigate(`${location.state ? location.state : "/"}`);
+            setTimeout(() => {
+              navigate(`${location.state ? location.state : "/"}`);
+            }, 100);
           })
           .catch((error) => {
             toast.error(error.code);
@@ -52,7 +54,9 @@ const Register = () => {
           });
       })
       .catch((error) => {
-        toast.error(error.code);
+        const errorCode = error.code;
+        if (errorCode === "auth/email-already-in-use")
+          toast.error("Email already registered");
       });
   };
 
@@ -63,7 +67,9 @@ const Register = () => {
         navigate(`${location.state ? location.state : "/"}`);
       })
       .catch((error) => {
-        toast.error(error.code);
+        const errorCode = error.code;
+        if (errorCode === "auth/email-already-in-use")
+          toast.error("Email already registered");
       });
   };
   return (
