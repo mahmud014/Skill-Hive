@@ -10,12 +10,10 @@ const Root = () => {
   return (
     <div>
       <header>
-        <nav>
-          <Navbar />
-        </nav>
+        <Navbar />
       </header>
-      <main className="px-4 py-6">
-        {state == "loading" ? <LoadingPage /> : <Outlet />}
+      <main className="pt-20 px-4 py-6">
+        {state === "loading" ? <LoadingPage /> : <Outlet />}
       </main>
       <Footer />
       <Toaster></Toaster>

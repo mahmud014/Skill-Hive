@@ -6,10 +6,10 @@ import profileIcon from "../assets/profile.png";
 import toast from "react-hot-toast";
 const Navbar = () => {
   const { user, logOut } = use(AuthContext);
-  const haldleLogOut = () => {
+  const handleLogOut = () => {
     logOut()
       .then(() => {
-        toast.success("Loged Out success");
+        toast.success("Logged out successfully");
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -17,7 +17,7 @@ const Navbar = () => {
       });
   };
   return (
-    <nav className="bg-white shadow-sm px-4 py-3 sticky top-0 z-50">
+    <nav className="bg-white shadow-sm px-4 py-3  sticky top-0 z-50">
       <div className="container mx-auto px-4 flex flex-wrap items-center justify-between">
         <Link
           title="SkillHive"
@@ -66,9 +66,7 @@ const Navbar = () => {
                 <NavLink to="/profile" className="nav-link">
                   My Profile
                 </NavLink>
-              ) : (
-                ""
-              )}
+              ) : null}
             </li>
           </ul>
         </div>
@@ -83,7 +81,7 @@ const Navbar = () => {
           </div>
           <div>
             {user ? (
-              <button onClick={haldleLogOut} className="btn btn-primary">
+              <button onClick={handleLogOut} className="btn btn-primary">
                 LogOut
               </button>
             ) : (

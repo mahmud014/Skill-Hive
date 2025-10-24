@@ -46,7 +46,7 @@ const Register = () => {
             toast.success("Account created successfully!");
             setTimeout(() => {
               navigate(`${location.state ? location.state : "/"}`);
-            }, 100);
+            }, 1000);
           })
           .catch((error) => {
             toast.error(error.code);

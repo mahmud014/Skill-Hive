@@ -11,7 +11,7 @@ const Hero = () => {
   const slides = use(slidesPromise);
 
   return (
-    <section className="w-full h-[400px] md:h-[500px] lg:h-[600px] rounded-xl overflow-hidden shadow-lg">
+    <section className="w-full h-[400px] md:h-[500px] lg:h-[600px] rounded-xl shadow-lg">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -23,7 +23,7 @@ const Hero = () => {
         navigation={true}
         loop={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="h-full"
+        className="h-full rounded-xl overflow-hidden"
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import { useLoaderData } from "react-router";
 import BrowserCard from "../Components/BrowserCard";
 
@@ -10,7 +10,7 @@ const BrowseSkill = () => {
     sortBy: "match",
   });
 
-  const filterAndSortSkills = useCallback(() => {
+  useEffect(() => {
     if (!browserData) return;
 
     let filtered = browserData.filter((skill) =>
@@ -22,17 +22,14 @@ const BrowseSkill = () => {
         : true
     );
 
-    filtered.sort((a, b) => {
-      if (filters.sortBy === "rating") return b.rating - a.rating;
-      return 0;
-    });
+    if (filters.sortBy === "rating") {
+      filtered.sort((a, b) => b.rating - a.rating);
+    } else if (filters.sortBy === "newest") {
+      filtered.sort((a, b) => new Date(b.date) - new Date(a.date));
+    }
 
     setSkills(filtered);
   }, [filters, browserData]);
-
-  useEffect(() => {
-    filterAndSortSkills();
-  }, [filterAndSortSkills]);
 
   const handleFilterChange = (e) => {
     const { name, value } = e.target;
@@ -55,12 +52,6 @@ const BrowseSkill = () => {
             onChange={handleFilterChange}
             className="input input-bordered w-full md:w-80 text-gray-400"
           />
-          <button
-            onClick={filterAndSortSkills}
-            className="btn btn-primary w-full md:w-auto"
-          >
-            Search
-          </button>
         </div>
       </header>
 
