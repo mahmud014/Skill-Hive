@@ -7,7 +7,7 @@ Whether it’s guitar lessons, coding help, yoga training, or language exchange 
 
 ## 🌐 **Live Site**
 
-🔗 [https://skillhive-282db.web.app/](https://skillhive-282db.web.app/)
+🔗 
 
 ---
 
