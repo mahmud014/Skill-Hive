@@ -1,11 +1,11 @@
-import React, { use } from "react";
+import React, { useContext } from "react";
 import { FaStar, FaMapMarkerAlt } from "react-icons/fa";
 import { Link } from "react-router";
 
 const topRatedPromise = fetch("/TopRated.json").then((res) => res.json());
 
 const TopRated = () => {
-  const topRatedData = use(topRatedPromise);
+  const topRatedData = useContext(topRatedPromise);
 
   return (
     <section className="py-10 bg-base-200">
@@ -18,7 +18,7 @@ const TopRated = () => {
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
-          {topRatedData.map((provider) => (
+          {topRatedData?.map((provider) => (
             <div
               key={provider.id}
               className="card w-full max-w-sm bg-white shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col"

@@ -27,11 +27,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "browseskills",
-        element: (
-          <PrivateRoute>
-            <BrowseSkill />
-          </PrivateRoute>
-        ),
+        element: <BrowseSkill />,
         loader: () => fetch("/Browser.json"),
         hydrateFallbackElement: <LoadingPage />,
       },
@@ -55,11 +51,7 @@ export const router = createBrowserRouter([
   },
   {
     path: "skill/:id",
-    element: (
-      <PrivateRoute>
-        <SkillDetails />
-      </PrivateRoute>
-    ),
+    element: <SkillDetails />,
     loader: () => fetch("/Data.json"),
     hydrateFallbackElement: <LoadingPage />,
   },

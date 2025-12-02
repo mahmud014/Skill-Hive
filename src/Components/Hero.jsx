@@ -25,7 +25,7 @@ const Hero = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className="h-full rounded-xl overflow-hidden"
       >
-        {slides.map((slide) => (
+        {slides?.map((slide) => (
           <SwiperSlide key={slide.id}>
             <div
               className="relative w-full h-full flex items-center justify-center text-center bg-cover bg-center"

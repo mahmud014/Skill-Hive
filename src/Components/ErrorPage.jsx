@@ -13,7 +13,7 @@ const ErrorPage = () => {
         <div className="flex flex-col items-center justify-center min-h-screen bg-base-200 text-center">
           <div>
             <img
-              src="https://i.ibb.co/W4FBpW99/3737258.jpg"
+              src="https://i.ibb.co.com/DP44TfcT/2101-i402-020-Computer-repair-404-flat-composition.jpg"
               alt="Not Found Illustration"
               className="w-64 opacity-90"
             />
