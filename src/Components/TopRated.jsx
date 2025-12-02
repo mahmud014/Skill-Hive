@@ -1,11 +1,11 @@
-import React, { useContext } from "react";
+import React, { use } from "react";
 import { FaStar, FaMapMarkerAlt } from "react-icons/fa";
 import { Link } from "react-router";
 
 const topRatedPromise = fetch("/TopRated.json").then((res) => res.json());
 
 const TopRated = () => {
-  const topRatedData = useContext(topRatedPromise);
+  const topRatedData = use(topRatedPromise);
 
   return (
     <section className="py-10 bg-base-200">

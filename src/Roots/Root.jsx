@@ -9,10 +9,10 @@ const Root = () => {
   const { state } = useNavigation();
   return (
     <div>
-      <header>
+      <header className="sticky top-0 z-50">
         <Navbar />
       </header>
-      <main className="pt-20 px-4 py-6">
+      <main className="pt-10 px-4 py-6">
         {state === "loading" ? <LoadingPage /> : <Outlet />}
       </main>
       <Footer />
