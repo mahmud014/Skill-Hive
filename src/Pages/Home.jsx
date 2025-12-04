@@ -19,11 +19,11 @@ const Home = () => {
     <div>
       <title>SkillHive - Home</title>
       <Suspense fallback={<LoadingPage />}>
-        <section className="mb-10 py-16 sm:py-20">
+        <section>
           <Hero />
         </section>
 
-        <section>
+        <section className="mb-10 py-16 sm:py-20">
           <div>
             <h2 className="text-3xl sm:text-4xl font-bold text-center text-primary mb-2">
               🔥 Most Popular Skills
