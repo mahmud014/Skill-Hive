@@ -19,14 +19,19 @@ const Home = () => {
     <div>
       <title>SkillHive - Home</title>
       <Suspense fallback={<LoadingPage />}>
-        <section className="mb-8">
+        <section className="mb-10 py-16 sm:py-20">
           <Hero />
         </section>
 
         <section>
-          <h2 className="max-w-7xl mx-auto text-2xl sm:text-3xl font-semibold my-8 sm:my-10  text-left">
-            Popular Skills
-          </h2>
+          <div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-center text-primary mb-2">
+              🔥 Most Popular Skills
+            </h2>
+            <p className="text-lg sm:text-xl text-center text-gray-500 mb-10">
+              Level Up Your Career with Today’s Most In-Demand Skills
+            </p>
+          </div>
           <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {skills.map((skill) => (
               <SkillCard key={skill.skillId} skill={skill} />

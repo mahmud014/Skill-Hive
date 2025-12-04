@@ -8,7 +8,7 @@ const TopRated = () => {
   const topRatedData = use(topRatedPromise);
 
   return (
-    <section className="py-10 bg-base-200">
+    <section className="py-16 sm:py-20 bg-base-200">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl sm:text-4xl font-bold text-center text-primary mb-2">
           ✨ Top Rated SkillHive Mentors
@@ -66,9 +66,9 @@ const TopRated = () => {
                   <span className="text-lg sm:text-2xl font-bold text-green-700">
                     {provider.rate}
                   </span>
-                  <Link className="btn btn-primary w-full sm:w-auto">
+                  <button className="btn btn-primary w-full sm:w-auto">
                     View Mentor
-                  </Link>
+                  </button>
                 </div>
               </div>
             </div>

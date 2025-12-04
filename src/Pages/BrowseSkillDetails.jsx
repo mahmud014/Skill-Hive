@@ -9,6 +9,7 @@ import {
   FaChevronRight,
   FaCheck,
   FaUserCircle,
+  FaAngleUp,
 } from "react-icons/fa";
 import LoadingPage from "../Components/LoadingPage";
 import ErrorPage from "../Components/ErrorPage";
@@ -114,7 +115,7 @@ const BrowseSkillDetails = () => {
             {/* Top meta card (glass) */}
             <div className="p-6 rounded-2xl bg-white/70 backdrop-blur-md border border-white/10 shadow">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                <div>
+                <div className="flex-1">
                   <p className="text-sm text-slate-600">
                     Category • {skill.category}
                   </p>
@@ -124,8 +125,8 @@ const BrowseSkillDetails = () => {
                   <p className="mt-2 text-slate-700">{skill.tagline}</p>
                 </div>
 
-                <div className="flex items-center gap-6">
-                  <div className="text-right">
+                <div className="flex flex-1 items-center gap-6">
+                  <div className="text-right flex-1">
                     <div className="text-2xl font-extrabold text-emerald-600">
                       {skill.discountPrice ?? skill.price} {skill.currency}
                     </div>
@@ -139,7 +140,7 @@ const BrowseSkillDetails = () => {
                     </div>
                   </div>
 
-                  <div>
+                  <div className="flex-1">
                     <Link className="inline-block px-4 py-2 bg-linear-to-r from-yellow-500 to-yellow-400 text-black rounded-full shadow-lg transform transition-transform hover:-translate-y-0.5">
                       Enroll Now
                     </Link>
@@ -319,20 +320,7 @@ const BrowseSkillDetails = () => {
                             open ? "rotate-180" : "rotate-0"
                           }`}
                         >
-                          <svg
-                            width="18"
-                            height="18"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                          >
-                            <path
-                              d="M6 9l6 6 6-6"
-                              stroke="currentColor"
-                              strokeWidth="2"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            />
-                          </svg>
+                          <FaAngleUp />
                         </div>
                       </button>
 
@@ -436,7 +424,7 @@ const BrowseSkillDetails = () => {
 
               <div className="mt-4">
                 <Link
-                  to="/"
+                  to="/browseskills"
                   className="inline-block text-sm text-slate-600 underline"
                 >
                   View other classes

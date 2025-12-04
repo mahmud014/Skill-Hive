@@ -27,19 +27,15 @@ const BrowserCard = ({ skill }) => {
           {skill.skillName}
         </h3>
 
-        <p className="text-sm text-gray-600 mb-2">
-          <span className="font-medium">{skill.providerName}</span>
-          <span className="flex items-center gap-1">
-            <FaStar className="text-yellow-400" /> {skill.rating} (
-            {skill.reviews} reviews)
-          </span>
-        </p>
-
-        <p className="text-sm text-gray-500 mb-4">
-          {skill.distance > 0
-            ? `📍 ${skill.location} (${skill.distance} km away)`
-            : "📍 Online Sessions Only"}
-        </p>
+        <div className="flex justify-between items-center my-2">
+          <p>Mentor: {skill.providerName}</p>
+          <p className="text-sm text-gray-600 mb-2">
+            <span className="flex items-center gap-1">
+              <FaStar className="text-yellow-400" /> {skill.rating} (
+              {skill.reviews} reviews)
+            </span>
+          </p>
+        </div>
 
         <div className="mt-auto flex justify-between items-center">
           <span className="text-lg font-semibold text-gray-800">
@@ -49,7 +45,7 @@ const BrowserCard = ({ skill }) => {
             to={`/browseskills/${skill.skillId}`}
             className="btn btn-sm btn-primary hover:scale-105 transform transition-transform"
           >
-            View Profile
+            View Details
           </Link>
         </div>
       </div>

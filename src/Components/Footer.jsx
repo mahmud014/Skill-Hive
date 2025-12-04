@@ -86,9 +86,9 @@ const Footer = () => {
               Facebook
             </Link>
             <Link
-              to={"https://www.linkedin.com/"}
+              to={"https://www.linkedin.com/in/shukurmahmud"}
               target="_blank"
-              className="hover:text-pink-500 flex gap-2"
+              className="hover:text-blue-700 flex gap-2"
             >
               <FaLinkedin size={24} />
               LinkedIn
@@ -114,7 +114,7 @@ const Footer = () => {
             <Link
               to={"https://www.instagram.com/"}
               target="_blank"
-              className="hover:text-pink-500 flex gap-2"
+              className="hover:text-blue-700 flex gap-2"
             >
               <FaInstagram size={24} />
               Instagram

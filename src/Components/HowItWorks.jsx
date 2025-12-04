@@ -6,9 +6,9 @@ const HowItWorks = () => {
   return (
     <section className="py-16 sm:py-20 bg-base-100">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-neutral">
-            How SkillHive <span className="text-primary">Works</span>
+        <div className="text-center mb-10">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-primary">
+            🧠 How SkillHive Works
           </h2>
           <p className="text-md sm:text-xl text-gray-500 mt-2">
             Connecting local learners and mentors in three simple steps.
