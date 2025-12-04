@@ -2,73 +2,371 @@
   {
     "skillId": 1,
     "skillName": "Beginner Guitar Lessons",
+    "tagline": "Start your musical journey — learn chords, rhythm & 2 full songs!",
     "providerName": "Alex Martin",
+    "providerTitle": "Certified Guitar Instructor (8+ Years Experience)",
     "providerEmail": "alex@skillswap.com",
+    "providerImage": "https://i.postimg.cc/x14DWRM7/Alex-Martin.jpg",
+
     "price": 10000,
+    "discountPrice": 8500,
+    "currency": "BDT",
+
     "rating": 4.8,
+    "totalReviews": 120,
+    "studentsEnrolled": 450,
+
     "slotsAvailable": 3,
-    "description": "Acoustic guitar classes for complete beginners.",
-    "image": "https://i.ibb.co.com/fGxKrvCs/Beginner-Guitar-Lessons.jpg",
-    "category": "Music"
+    "duration": "4 Weeks",
+    "classType": "Offline + Online",
+    "language": "English / Bangla",
+    "level": "Beginner",
+    "category": "Music",
+
+    "thumbnail": "https://i.ibb.co.com/fGxKrvCs/Beginner-Guitar-Lessons.jpg",
+    "gallery": [
+      "https://i.postimg.cc/J0FVyskJ/Beginner-Guitar-Lessons1.jpg",
+      "https://i.postimg.cc/4xCqrkbm/Beginner-Guitar-Lessons2.jpg"
+    ],
+
+    "description": "Acoustic guitar classes designed for absolute beginners to learn chords, rhythm, and play their first songs.",
+
+    "whatYouWillLearn": [
+      "Play essential guitar chords",
+      "Basic strumming patterns",
+      "Finger placement techniques",
+      "Learn to play 2 complete songs",
+      "Develop a strong musical foundation"
+    ],
+
+    "requirements": ["Acoustic guitar", "No previous experience required"],
+
+    "highlights": [
+      "Small group classes",
+      "Individual feedback",
+      "Practice materials included"
+    ],
+
+    "location": {
+      "type": "Offline + Online",
+      "address": "Dhanmondi, Dhaka",
+      "googleMapLink": "#"
+    },
+
+    "schedule": [{ "day": "Friday", "time": "4 PM – 6 PM" }],
+
+    "faq": [
+      {
+        "question": "Do I need a guitar?",
+        "answer": "Yes, but rental options can be arranged."
+      },
+      {
+        "question": "Is it beginner-friendly?",
+        "answer": "Absolutely! No prior experience needed."
+      }
+    ]
   },
   {
     "skillId": 2,
     "skillName": "Spoken English Practice",
+    "tagline": "Boost your confidence — speak English fluently in daily life!",
     "providerName": "Sara Hossain",
+    "providerTitle": "Language Trainer & Communication Coach",
     "providerEmail": "sara@skillswap.com",
+    "providerImage": "https://i.postimg.cc/BZTL5h1y/Spoken-English.jpg",
+
     "price": 30000,
+    "discountPrice": 25000,
+    "currency": "BDT",
+
     "rating": 4.6,
+    "totalReviews": 200,
+    "studentsEnrolled": 700,
+
     "slotsAvailable": 5,
-    "description": "Conversational English sessions for non-native speakers.",
-    "image": "https://i.ibb.co.com/q3NJTBqB/Spoken-English-Practice.jpg",
-    "category": "Language"
+    "duration": "1 Month",
+    "classType": "Online",
+    "language": "Bangla / English",
+    "level": "Beginner to Intermediate",
+    "category": "Language",
+
+    "thumbnail": "https://i.ibb.co.com/q3NJTBqB/Spoken-English-Practice.jpg",
+    "gallery": [
+      "https://i.postimg.cc/j2xPW5b7/Spoken-English-Practice1.jpg",
+      "https://i.postimg.cc/02HDQPHC/Spoken-English-Practice2.jpg"
+    ],
+
+    "description": "Improve your conversational English through real-life speaking practice.",
+
+    "whatYouWillLearn": [
+      "Daily conversation skills",
+      "Correct pronunciation",
+      "Fluency training",
+      "Interview speaking improvement"
+    ],
+
+    "requirements": [
+      "Basic understanding of English alphabets",
+      "Mobile/Laptop with internet"
+    ],
+
+    "highlights": [
+      "Speaking-only sessions",
+      "Daily practice tasks",
+      "Recording access"
+    ],
+
+    "location": { "type": "Online" },
+
+    "schedule": [{ "day": "Saturday", "time": "7 PM – 9 PM" }],
+
+    "faq": [
+      {
+        "question": "Is this suitable for beginners?",
+        "answer": "Yes, the course starts from basics."
+      }
+    ]
   },
   {
     "skillId": 3,
     "skillName": "Intro to Web Development",
+    "tagline": "Build your first website — learn HTML, CSS & basic JavaScript!",
     "providerName": "Rafi Ahmed",
+    "providerTitle": "Front-end Developer & Mentor",
     "providerEmail": "rafi@skillswap.com",
+    "providerImage": "https://i.postimg.cc/PJxgqVGy/Rafi-Ahmed.jpg",
+
     "price": 15000,
+    "discountPrice": 12000,
+    "currency": "BDT",
+
     "rating": 4.7,
+    "totalReviews": 310,
+    "studentsEnrolled": 900,
+
     "slotsAvailable": 4,
-    "description": "HTML, CSS basics and simple JS projects.",
-    "image": "https://i.ibb.co.com/2Y1QnLF7/Intro-to-Web-Development.jpg",
-    "category": "Tech"
+    "duration": "6 Weeks",
+    "classType": "Online",
+    "language": "Bangla",
+    "level": "Beginner",
+    "category": "Tech",
+
+    "thumbnail": "https://i.ibb.co.com/2Y1QnLF7/Intro-to-Web-Development.jpg",
+    "gallery": [
+      "https://i.postimg.cc/NFFLqrtz/Web-Development1.jpg",
+      "https://i.postimg.cc/zXL3xW0B/Web-Development2.jpg"
+    ],
+
+    "description": "Learn the fundamentals of modern web development through hands-on projects.",
+
+    "whatYouWillLearn": [
+      "HTML structure",
+      "CSS styling",
+      "JavaScript basics",
+      "Responsive website creation"
+    ],
+
+    "requirements": ["Laptop required", "No coding experience needed"],
+
+    "highlights": [
+      "Project-based learning",
+      "Mentor support",
+      "Certificate included"
+    ],
+
+    "location": { "type": "Online" },
+
+    "schedule": [{ "day": "Friday", "time": "8 PM – 10 PM" }],
+
+    "faq": [
+      {
+        "question": "Will I build real projects?",
+        "answer": "Yes, you will build 3 beginner-level projects."
+      }
+    ]
   },
   {
     "skillId": 4,
     "skillName": "Yoga for Beginners",
+    "tagline": "Relax, stretch & improve your flexibility with easy yoga!",
     "providerName": "Maya Khatun",
+    "providerTitle": "Certified Yoga Trainer",
     "providerEmail": "maya@skillswap.com",
+    "providerImage": "https://i.postimg.cc/WpdjTt2R/Maya-Khatun.jpg",
+
     "price": 10000,
+    "discountPrice": 7500,
+    "currency": "BDT",
+
     "rating": 4.9,
+    "totalReviews": 180,
+    "studentsEnrolled": 600,
+
     "slotsAvailable": 6,
-    "description": "Gentle yoga and breathing techniques.",
-    "image": "https://i.ibb.co.com/qY6FNGGT/Yoga-for-Beginners.jpg",
-    "category": "Fitness"
+    "duration": "4 Weeks",
+    "classType": "Offline",
+    "language": "Bangla",
+    "level": "Beginner",
+    "category": "Fitness",
+
+    "thumbnail": "https://i.ibb.co.com/qY6FNGGT/Yoga-for-Beginners.jpg",
+    "gallery": [
+      "https://i.postimg.cc/rwNd4TfY/Yoga1.jpg",
+      "https://i.postimg.cc/XYkZ5WsK/Yoga2.jpg"
+    ],
+
+    "description": "Beginner-friendly yoga sessions to improve posture, breathing and flexibility.",
+
+    "whatYouWillLearn": [
+      "Basic yoga poses",
+      "Breathing techniques",
+      "Posture correction",
+      "Stress relief"
+    ],
+
+    "requirements": ["Yoga mat"],
+
+    "highlights": [
+      "Peaceful indoor studio",
+      "Beginner-friendly",
+      "Certified trainer"
+    ],
+
+    "location": {
+      "type": "Offline",
+      "address": "Mirpur, Dhaka",
+      "googleMapLink": "#"
+    },
+
+    "schedule": [{ "day": "Friday", "time": "10 AM –12 PM" }],
+
+    "faq": [
+      {
+        "question": "Can beginners join?",
+        "answer": "Yes, this class is designed for beginners."
+      }
+    ]
   },
   {
     "skillId": 5,
     "skillName": "Basic Drawing Class",
+    "tagline": "Develop your pencil shading & sketching skills from basics!",
     "providerName": "Tanvir",
+    "providerTitle": "Sketch Artist & Drawing Instructor",
     "providerEmail": "tanvir@skillswap.com",
+    "providerImage": "https://i.postimg.cc/SNLPhpzy/Tanvir.jpg",
+
     "price": 8090,
+    "discountPrice": 7000,
+    "currency": "BDT",
+
     "rating": 4.5,
+    "totalReviews": 95,
+    "studentsEnrolled": 300,
+
     "slotsAvailable": 8,
-    "description": "Pencil shading and sketching basics.",
-    "image": "https://i.ibb.co.com/sJqxFZPH/Basic-Drawing-Class.jpg",
-    "category": "Art"
+    "duration": "5 Weeks",
+    "classType": "Offline",
+    "language": "Bangla",
+    "level": "Beginner",
+    "category": "Art",
+
+    "thumbnail": "https://i.ibb.co.com/sJqxFZPH/Basic-Drawing-Class.jpg",
+    "gallery": [
+      "https://i.postimg.cc/GhrdyyVN/Drawing-Class1.jpg",
+      "https://i.postimg.cc/pXxRFF4g/Drawing-Class2.jpg"
+    ],
+
+    "description": "Learn pencil shading, sketching techniques, and control through practical exercises.",
+
+    "whatYouWillLearn": [
+      "Light & shadow basics",
+      "Pencil shading methods",
+      "Object sketching",
+      "Drawing composition"
+    ],
+
+    "requirements": ["Drawing copy, pencils"],
+
+    "highlights": [
+      "Beginner friendly",
+      "Hands-on practice",
+      "Instructor guidance"
+    ],
+
+    "location": {
+      "type": "Offline",
+      "address": "Uttara, Dhaka"
+    },
+
+    "schedule": [{ "day": "Sunday", "time": "3 PM – 5 PM" }],
+
+    "faq": [
+      {
+        "question": "Do I need experience?",
+        "answer": "No, it starts from basics."
+      }
+    ]
   },
   {
     "skillId": 6,
     "skillName": "Computer Hardware and Software",
+    "tagline": "Understand PC components & essential software — hands-on training!",
     "providerName": "Ruma Sen",
+    "providerTitle": "Computer Trainer (6+ Years Experience)",
     "providerEmail": "ruma@skillswap.com",
+    "providerImage": "https://i.postimg.cc/PJQQBTVb/Ruma-Sen.jpg",
+
     "price": 5090,
+    "discountPrice": 4500,
+    "currency": "BDT",
+
     "rating": 4.4,
+    "totalReviews": 110,
+    "studentsEnrolled": 380,
+
     "slotsAvailable": 7,
-    "description": "Learn the basics of computer hardware components and software applications.",
-    "image": "https://i.ibb.co.com/MDvbg8xv/Computer-Hardware-and-Software.jpg",
-    "category": "Computer"
+    "duration": "3 Weeks",
+    "classType": "Offline",
+    "language": "Bangla",
+    "level": "Beginner",
+    "category": "Computer",
+
+    "thumbnail": "https://i.ibb.co.com/MDvbg8xv/Computer-Hardware-and-Software.jpg",
+    "gallery": [
+      "https://i.postimg.cc/8c43WjrT/Computer-Hardware-and-Software1.jpg",
+      "https://i.postimg.cc/tJkfPYVb/Computer-Hardware-and-Software2.jpg"
+    ],
+
+    "description": "Learn the basics of computer hardware components and essential software operations.",
+
+    "whatYouWillLearn": [
+      "Identify PC parts",
+      "Install and manage software",
+      "Basic troubleshooting",
+      "System optimization"
+    ],
+
+    "requirements": ["No prior experience needed"],
+
+    "highlights": [
+      "Hands-on hardware practice",
+      "Beginner-friendly",
+      "Affordable course"
+    ],
+
+    "location": {
+      "type": "Offline",
+      "address": "Badda, Dhaka"
+    },
+
+    "schedule": [{ "day": "Tuesday", "time": "4 PM – 6 PM" }],
+
+    "faq": [
+      {
+        "question": "Is hardware included?",
+        "answer": "Yes, all practice hardware is provided."
+      }
+    ]
   }
 ]

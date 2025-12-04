@@ -6,7 +6,7 @@ const SkillCard = ({ skill }) => {
     <div className="card bg-base-100 shadow">
       <figure>
         <img
-          src={skill.image}
+          src={skill.thumbnail}
           alt={skill.skillName}
           className="h-52 w-full object-cover overflow-hidden"
         />

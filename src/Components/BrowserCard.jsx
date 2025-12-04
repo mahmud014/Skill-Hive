@@ -7,8 +7,8 @@ const BrowserCard = ({ skill }) => {
     <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 flex flex-col">
       <div className="h-48 w-full overflow-hidden">
         <img
-          src={skill.image}
-          alt={skill.title}
+          src={skill.thumbnail}
+          alt={skill.skillName}
           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
         />
       </div>
@@ -24,11 +24,11 @@ const BrowserCard = ({ skill }) => {
         </div>
 
         <h3 className="text-lg font-bold mb-1 hover:text-blue-600 transition-colors">
-          {skill.title}
+          {skill.skillName}
         </h3>
 
         <p className="text-sm text-gray-600 mb-2">
-          <span className="font-medium">{skill.mentor}</span> •{" "}
+          <span className="font-medium">{skill.providerName}</span>
           <span className="flex items-center gap-1">
             <FaStar className="text-yellow-400" /> {skill.rating} (
             {skill.reviews} reviews)
@@ -43,9 +43,12 @@ const BrowserCard = ({ skill }) => {
 
         <div className="mt-auto flex justify-between items-center">
           <span className="text-lg font-semibold text-gray-800">
-            {skill.price}
+            ৳ {skill.price}
           </span>
-          <Link className="btn btn-sm btn-primary hover:scale-105 transform transition-transform">
+          <Link
+            to={`/browseskills/${skill.skillId}`}
+            className="btn btn-sm btn-primary hover:scale-105 transform transition-transform"
+          >
             View Profile
           </Link>
         </div>

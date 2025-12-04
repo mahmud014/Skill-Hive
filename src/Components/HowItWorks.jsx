@@ -1,5 +1,6 @@
 import React from "react";
 import { FaSearch, FaHandshake, FaUserFriends } from "react-icons/fa";
+import { Link } from "react-router";
 
 const HowItWorks = () => {
   return (
@@ -62,9 +63,12 @@ const HowItWorks = () => {
         </div>
 
         <div className="text-center mt-12">
-          <button className="btn btn-lg btn-primary shadow-lg">
+          <Link
+            to={"/browseskills"}
+            className="btn btn-lg btn-primary shadow-lg"
+          >
             Start Exploring Skills Now
-          </button>
+          </Link>
         </div>
       </div>
     </section>

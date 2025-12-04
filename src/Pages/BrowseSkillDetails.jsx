@@ -12,10 +12,8 @@ import {
 } from "react-icons/fa";
 import LoadingPage from "../Components/LoadingPage";
 import ErrorPage from "../Components/ErrorPage";
-import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
 
-const SkillDetails = () => {
+const BrowseSkillDetails = () => {
   const { id } = useParams();
   const skillsData = useLoaderData();
 
@@ -63,12 +61,6 @@ const SkillDetails = () => {
 
   return (
     <div className="bg-linear-to-b from-slate-50 to-white min-h-screen text-slate-800">
-      <header className="sticky top-0 z-50">
-        <div className="backdrop-blur-md bg-white/60 border-b border-slate-200">
-          <Navbar />
-        </div>
-      </header>
-
       {/* HERO */}
       <div className="relative w-full h-96 md:h-[520px] lg:h-[560px] overflow-hidden">
         <img
@@ -473,12 +465,8 @@ const SkillDetails = () => {
         {/* Footer spacing */}
         <div className="mt-12" />
       </main>
-
-      <footer className="mt-12">
-        <Footer />
-      </footer>
     </div>
   );
 };
 
-export default SkillDetails;
+export default BrowseSkillDetails;

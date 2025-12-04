@@ -1,86 +1,1108 @@
 [
   {
-    "id": 101,
-    "title": "Web Development Basics (React)",
-    "category": "Technology & Coding",
-    "mentor": "Tanjib Ahmed",
-    "rating": 4.9,
-    "reviews": 82,
-    "location": "Mirpur, Dhaka",
-    "distance": 3.5,
-    "price": "BDT 800/hr",
-    "type": "paid",
-    "level": "Intermediate",
-    "image": "https://i.ibb.co.com/LdMJFLhv/Web-Development-Basics-React.jpg"
-  },
-  {
-    "id": 102,
-    "title": "Digital Painting for Beginners",
-    "category": "Art & Design",
-    "mentor": "Nusrat Jahan",
-    "rating": 4.7,
-    "reviews": 45,
-    "location": "Online Sessions Only",
-    "distance": 0,
-    "price": "Skill Exchange Only (Photography)",
-    "type": "free",
-    "level": "Beginner",
-    "image": "https://i.ibb.co.com/qF45hjQH/Digital-Painting-for-Beginners.jpg"
-  },
-  {
-    "id": 103,
-    "title": "Authentic Bengali Cuisine",
-    "category": "Cooking & Baking",
-    "mentor": "Rahima Begum",
-    "rating": 5.0,
-    "reviews": 15,
-    "location": "Dhanmondi, Dhaka",
-    "distance": 2.1,
-    "price": "BDT 500/session",
-    "type": "paid",
-    "level": "Beginner",
-    "image": "https://i.ibb.co.com/n8YxSrpn/Authentic-Bengali-Cuisine.jpg"
-  },
-  {
-    "id": 104,
-    "title": "Spoken English Practice",
-    "category": "Language Learning",
-    "mentor": "Farid Hossain",
-    "rating": 4.5,
-    "reviews": 110,
-    "location": "Gulshan, Dhaka",
-    "distance": 7.8,
-    "price": "BDT 600/hr",
-    "type": "paid",
-    "level": "Intermediate",
-    "image": "https://i.ibb.co.com/LdGf17X0/learning-foreign-languages.jpg"
-  },
-  {
-    "id": 105,
-    "title": "Acoustic Guitar for Absolute Beginners",
-    "category": "Music & Instruments",
-    "mentor": "Zahid Hassan",
+    "skillId": 1,
+    "skillName": "Beginner Guitar Lessons",
+    "tagline": "Start your musical journey — learn chords, rhythm & 2 full songs!",
+    "providerName": "Alex Martin",
+    "providerTitle": "Certified Guitar Instructor (8+ Years Experience)",
+    "providerEmail": "alex@skillswap.com",
+    "providerImage": "https://i.postimg.cc/x14DWRM7/Alex-Martin.jpg",
+
+    "price": 10000,
+    "discountPrice": 8500,
+    "currency": "BDT",
+
     "rating": 4.8,
-    "reviews": 65,
-    "location": "Banani, Dhaka",
-    "distance": 5.2,
-    "price": "BDT 750/hr",
-    "type": "paid",
+    "totalReviews": 120,
+    "studentsEnrolled": 450,
+
+    "slotsAvailable": 3,
+    "duration": "4 Weeks",
+    "classType": "Offline + Online",
+    "language": "English / Bangla",
     "level": "Beginner",
-    "image": "https://i.ibb.co.com/sdRfcTSJ/Acoustic-Guitar-for-Absolute-Beginners.jpg"
+    "category": "Music",
+
+    "thumbnail": "https://i.ibb.co.com/fGxKrvCs/Beginner-Guitar-Lessons.jpg",
+    "gallery": [
+      "https://i.postimg.cc/J0FVyskJ/Beginner-Guitar-Lessons1.jpg",
+      "https://i.postimg.cc/4xCqrkbm/Beginner-Guitar-Lessons2.jpg"
+    ],
+
+    "description": "Acoustic guitar classes designed for absolute beginners to learn chords, rhythm, and play their first songs.",
+
+    "whatYouWillLearn": [
+      "Play essential guitar chords",
+      "Basic strumming patterns",
+      "Finger placement techniques",
+      "Learn to play 2 complete songs",
+      "Develop a strong musical foundation"
+    ],
+
+    "requirements": ["Acoustic guitar", "No previous experience required"],
+
+    "highlights": [
+      "Small group classes",
+      "Individual feedback",
+      "Practice materials included"
+    ],
+
+    "location": {
+      "type": "Offline + Online",
+      "address": "Dhanmondi, Dhaka",
+      "googleMapLink": "#"
+    },
+
+    "schedule": [{ "day": "Friday", "time": "4 PM – 6 PM" }],
+
+    "faq": [
+      {
+        "question": "Do I need a guitar?",
+        "answer": "Yes, but rental options can be arranged."
+      },
+      {
+        "question": "Is it beginner-friendly?",
+        "answer": "Absolutely! No prior experience needed."
+      }
+    ]
   },
   {
-    "id": 106,
-    "title": "Yoga and Mindfulness for Stress Relief",
-    "category": "Health & Wellness",
-    "mentor": "Shaila Kabir",
-    "rating": 5.0,
-    "reviews": 30,
-    "location": "Online Sessions Only",
-    "distance": 0,
-    "price": "Skill Exchange Only (Gardening)",
-    "type": "free",
+    "skillId": 2,
+    "skillName": "Spoken English Practice",
+    "tagline": "Boost your confidence — speak English fluently in daily life!",
+    "providerName": "Sara Hossain",
+    "providerTitle": "Language Trainer & Communication Coach",
+    "providerEmail": "sara@skillswap.com",
+    "providerImage": "https://i.postimg.cc/BZTL5h1y/Spoken-English.jpg",
+
+    "price": 30000,
+    "discountPrice": 25000,
+    "currency": "BDT",
+
+    "rating": 4.6,
+    "totalReviews": 200,
+    "studentsEnrolled": 700,
+
+    "slotsAvailable": 5,
+    "duration": "1 Month",
+    "classType": "Online",
+    "language": "Bangla / English",
+    "level": "Beginner to Intermediate",
+    "category": "Language",
+
+    "thumbnail": "https://i.ibb.co.com/q3NJTBqB/Spoken-English-Practice.jpg",
+    "gallery": [
+      "https://i.postimg.cc/j2xPW5b7/Spoken-English-Practice1.jpg",
+      "https://i.postimg.cc/02HDQPHC/Spoken-English-Practice2.jpg"
+    ],
+
+    "description": "Improve your conversational English through real-life speaking practice.",
+
+    "whatYouWillLearn": [
+      "Daily conversation skills",
+      "Correct pronunciation",
+      "Fluency training",
+      "Interview speaking improvement"
+    ],
+
+    "requirements": [
+      "Basic understanding of English alphabets",
+      "Mobile/Laptop with internet"
+    ],
+
+    "highlights": [
+      "Speaking-only sessions",
+      "Daily practice tasks",
+      "Recording access"
+    ],
+
+    "location": { "type": "Online" },
+
+    "schedule": [{ "day": "Saturday", "time": "7 PM – 9 PM" }],
+
+    "faq": [
+      {
+        "question": "Is this suitable for beginners?",
+        "answer": "Yes, the course starts from basics."
+      }
+    ]
+  },
+  {
+    "skillId": 3,
+    "skillName": "Intro to Web Development",
+    "tagline": "Build your first website — learn HTML, CSS & basic JavaScript!",
+    "providerName": "Rafi Ahmed",
+    "providerTitle": "Front-end Developer & Mentor",
+    "providerEmail": "rafi@skillswap.com",
+    "providerImage": "https://i.postimg.cc/PJxgqVGy/Rafi-Ahmed.jpg",
+
+    "price": 15000,
+    "discountPrice": 12000,
+    "currency": "BDT",
+
+    "rating": 4.7,
+    "totalReviews": 310,
+    "studentsEnrolled": 900,
+
+    "slotsAvailable": 4,
+    "duration": "6 Weeks",
+    "classType": "Online",
+    "language": "Bangla",
+    "level": "Beginner",
+    "category": "Tech",
+
+    "thumbnail": "https://i.ibb.co.com/2Y1QnLF7/Intro-to-Web-Development.jpg",
+    "gallery": [
+      "https://i.postimg.cc/NFFLqrtz/Web-Development1.jpg",
+      "https://i.postimg.cc/zXL3xW0B/Web-Development2.jpg"
+    ],
+
+    "description": "Learn the fundamentals of modern web development through hands-on projects.",
+
+    "whatYouWillLearn": [
+      "HTML structure",
+      "CSS styling",
+      "JavaScript basics",
+      "Responsive website creation"
+    ],
+
+    "requirements": ["Laptop required", "No coding experience needed"],
+
+    "highlights": [
+      "Project-based learning",
+      "Mentor support",
+      "Certificate included"
+    ],
+
+    "location": { "type": "Online" },
+
+    "schedule": [{ "day": "Friday", "time": "8 PM – 10 PM" }],
+
+    "faq": [
+      {
+        "question": "Will I build real projects?",
+        "answer": "Yes, you will build 3 beginner-level projects."
+      }
+    ]
+  },
+  {
+    "skillId": 4,
+    "skillName": "Yoga for Beginners",
+    "tagline": "Relax, stretch & improve your flexibility with easy yoga!",
+    "providerName": "Maya Khatun",
+    "providerTitle": "Certified Yoga Trainer",
+    "providerEmail": "maya@skillswap.com",
+    "providerImage": "https://i.postimg.cc/WpdjTt2R/Maya-Khatun.jpg",
+
+    "price": 10000,
+    "discountPrice": 7500,
+    "currency": "BDT",
+
+    "rating": 4.9,
+    "totalReviews": 180,
+    "studentsEnrolled": 600,
+
+    "slotsAvailable": 6,
+    "duration": "4 Weeks",
+    "classType": "Offline",
+    "language": "Bangla",
+    "level": "Beginner",
+    "category": "Fitness",
+
+    "thumbnail": "https://i.ibb.co.com/qY6FNGGT/Yoga-for-Beginners.jpg",
+    "gallery": [
+      "https://i.postimg.cc/rwNd4TfY/Yoga1.jpg",
+      "https://i.postimg.cc/XYkZ5WsK/Yoga2.jpg"
+    ],
+
+    "description": "Beginner-friendly yoga sessions to improve posture, breathing and flexibility.",
+
+    "whatYouWillLearn": [
+      "Basic yoga poses",
+      "Breathing techniques",
+      "Posture correction",
+      "Stress relief"
+    ],
+
+    "requirements": ["Yoga mat"],
+
+    "highlights": [
+      "Peaceful indoor studio",
+      "Beginner-friendly",
+      "Certified trainer"
+    ],
+
+    "location": {
+      "type": "Offline",
+      "address": "Mirpur, Dhaka",
+      "googleMapLink": "#"
+    },
+
+    "schedule": [{ "day": "Friday", "time": "10 AM –12 PM" }],
+
+    "faq": [
+      {
+        "question": "Can beginners join?",
+        "answer": "Yes, this class is designed for beginners."
+      }
+    ]
+  },
+  {
+    "skillId": 5,
+    "skillName": "Basic Drawing Class",
+    "tagline": "Develop your pencil shading & sketching skills from basics!",
+    "providerName": "Tanvir",
+    "providerTitle": "Sketch Artist & Drawing Instructor",
+    "providerEmail": "tanvir@skillswap.com",
+    "providerImage": "https://i.postimg.cc/SNLPhpzy/Tanvir.jpg",
+
+    "price": 8090,
+    "discountPrice": 7000,
+    "currency": "BDT",
+
+    "rating": 4.5,
+    "totalReviews": 95,
+    "studentsEnrolled": 300,
+
+    "slotsAvailable": 8,
+    "duration": "5 Weeks",
+    "classType": "Offline",
+    "language": "Bangla",
+    "level": "Beginner",
+    "category": "Art",
+
+    "thumbnail": "https://i.ibb.co.com/sJqxFZPH/Basic-Drawing-Class.jpg",
+    "gallery": [
+      "https://i.postimg.cc/GhrdyyVN/Drawing-Class1.jpg",
+      "https://i.postimg.cc/pXxRFF4g/Drawing-Class2.jpg"
+    ],
+
+    "description": "Learn pencil shading, sketching techniques, and control through practical exercises.",
+
+    "whatYouWillLearn": [
+      "Light & shadow basics",
+      "Pencil shading methods",
+      "Object sketching",
+      "Drawing composition"
+    ],
+
+    "requirements": ["Drawing copy, pencils"],
+
+    "highlights": [
+      "Beginner friendly",
+      "Hands-on practice",
+      "Instructor guidance"
+    ],
+
+    "location": {
+      "type": "Offline",
+      "address": "Uttara, Dhaka"
+    },
+
+    "schedule": [{ "day": "Sunday", "time": "3 PM – 5 PM" }],
+
+    "faq": [
+      {
+        "question": "Do I need experience?",
+        "answer": "No, it starts from basics."
+      }
+    ]
+  },
+  {
+    "skillId": 6,
+    "skillName": "Computer Hardware and Software",
+    "tagline": "Understand PC components & essential software — hands-on training!",
+    "providerName": "Ruma Sen",
+    "providerTitle": "Computer Trainer (6+ Years Experience)",
+    "providerEmail": "ruma@skillswap.com",
+    "providerImage": "https://i.postimg.cc/PJQQBTVb/Ruma-Sen.jpg",
+
+    "price": 5090,
+    "discountPrice": 4500,
+    "currency": "BDT",
+
+    "rating": 4.4,
+    "totalReviews": 110,
+    "studentsEnrolled": 380,
+
+    "slotsAvailable": 7,
+    "duration": "3 Weeks",
+    "classType": "Offline",
+    "language": "Bangla",
+    "level": "Beginner",
+    "category": "Computer",
+
+    "thumbnail": "https://i.ibb.co.com/MDvbg8xv/Computer-Hardware-and-Software.jpg",
+    "gallery": [
+      "https://i.postimg.cc/8c43WjrT/Computer-Hardware-and-Software1.jpg",
+      "https://i.postimg.cc/tJkfPYVb/Computer-Hardware-and-Software2.jpg"
+    ],
+
+    "description": "Learn the basics of computer hardware components and essential software operations.",
+
+    "whatYouWillLearn": [
+      "Identify PC parts",
+      "Install and manage software",
+      "Basic troubleshooting",
+      "System optimization"
+    ],
+
+    "requirements": ["No prior experience needed"],
+
+    "highlights": [
+      "Hands-on hardware practice",
+      "Beginner-friendly",
+      "Affordable course"
+    ],
+
+    "location": {
+      "type": "Offline",
+      "address": "Badda, Dhaka"
+    },
+
+    "schedule": [{ "day": "Tuesday", "time": "4 PM – 6 PM" }],
+
+    "faq": [
+      {
+        "question": "Is hardware included?",
+        "answer": "Yes, all practice hardware is provided."
+      }
+    ]
+  },
+  {
+    "skillId": 7,
+    "skillName": "Advanced Excel & Data Visualization",
+    "tagline": "Master Excel formulas, dashboards & data analysis!",
+    "providerName": "Zahin Rahman",
+    "providerTitle": "Data Analyst & Excel Expert",
+    "providerEmail": "zahin@skillswap.com",
+    "providerImage": "https://i.postimg.cc/43tmD0K0/Zahin-Rahman.jpg",
+
+    "price": 18000,
+    "discountPrice": 15000,
+    "currency": "BDT",
+
+    "rating": 4.7,
+    "totalReviews": 210,
+    "studentsEnrolled": 850,
+
+    "slotsAvailable": 5,
+    "duration": "4 Weeks",
+    "classType": "Online",
+    "language": "Bangla",
     "level": "Intermediate",
-    "image": "https://i.ibb.co.com/7xVbThfD/Yoga-and-Mindfulness-for-Stress-Relief.jpg"
+    "category": "Tech",
+
+    "thumbnail": "https://i.postimg.cc/RhTtjDYV/Excel-Data.jpg",
+    "gallery": [
+      "https://i.postimg.cc/SskNwxbW/excel-1.jpg",
+      "https://i.postimg.cc/3RYJPxQG/excel2.jpg"
+    ],
+
+    "description": "Learn advanced Excel formulas, pivot tables, dashboards, and powerful data visualization.",
+    "whatYouWillLearn": [
+      "VLOOKUP, XLOOKUP, INDEX-MATCH",
+      "Pivot tables & charts",
+      "Dashboard creation",
+      "Data cleaning & analysis"
+    ],
+    "requirements": ["Basic Excel knowledge"],
+    "highlights": [
+      "Practical projects",
+      "Dashboard assignments",
+      "Certificate included"
+    ],
+
+    "location": { "type": "Online" },
+
+    "schedule": [{ "day": "Friday", "time": "7 PM – 9 PM" }],
+
+    "faq": [
+      {
+        "question": "Do I need prior Excel experience?",
+        "answer": "Basic knowledge is recommended."
+      }
+    ]
+  },
+  {
+    "skillId": 8,
+    "skillName": "Graphic Design with Photoshop",
+    "tagline": "Learn real-world design — posters, logos & social media graphics!",
+    "providerName": "Shuvo Das",
+    "providerTitle": "Professional Graphic Designer",
+    "providerEmail": "shuvo@skillswap.com",
+    "providerImage": "https://i.postimg.cc/mr2Tw6Yk/Shuvo-Das.jpg",
+
+    "price": 20000,
+    "discountPrice": 17000,
+    "currency": "BDT",
+
+    "rating": 4.8,
+    "totalReviews": 260,
+    "studentsEnrolled": 1200,
+
+    "slotsAvailable": 6,
+    "duration": "6 Weeks",
+    "classType": "Online",
+    "language": "Bangla / English",
+    "level": "Beginner",
+    "category": "Design",
+
+    "thumbnail": "https://i.postimg.cc/8cf34LXW/Graphic-Design.jpg",
+    "gallery": [
+      "https://i.postimg.cc/T15S0nNg/Graphic-Design-1.jpg",
+      "https://i.postimg.cc/0jK3n7XS/Graphic-Design-2.jpg"
+    ],
+
+    "description": "Learn full Photoshop workflow with hands-on branding & social media design.",
+    "whatYouWillLearn": [
+      "Photo editing",
+      "Poster & banner design",
+      "Logo & branding basics",
+      "Social media ad design"
+    ],
+
+    "requirements": ["Laptop with Photoshop installed"],
+    "highlights": ["Portfolio-based learning", "Live feedback", "Assignments"],
+
+    "location": { "type": "Online" },
+
+    "schedule": [{ "day": "Wednesday", "time": "8 PM – 10 PM" }],
+
+    "faq": [
+      {
+        "question": "Is Photoshop required?",
+        "answer": "Yes, you need Photoshop installed."
+      }
+    ]
+  },
+  {
+    "skillId": 9,
+    "skillName": "Digital Marketing Masterclass",
+    "tagline": "Become a complete digital marketer — SEO, Ads & Strategy!",
+    "providerName": "Ayesha Sultana",
+    "providerTitle": "Digital Marketing Strategist",
+    "providerEmail": "ayesha@skillswap.com",
+    "providerImage": "https://i.postimg.cc/CMjL7Ngp/Ayesha-Sultana.jpg",
+
+    "price": 35000,
+    "discountPrice": 28000,
+    "currency": "BDT",
+
+    "rating": 4.9,
+    "totalReviews": 310,
+    "studentsEnrolled": 1500,
+
+    "slotsAvailable": 5,
+    "duration": "1 Month",
+    "classType": "Online",
+    "language": "Bangla",
+    "level": "Beginner to Advanced",
+    "category": "Marketing",
+
+    "thumbnail": "https://i.postimg.cc/W4cSygp2/Digital-Marketing.jpg",
+    "gallery": [
+      "https://i.postimg.cc/HWB79ZFt/DM1.jpg",
+      "https://i.postimg.cc/Z5hD9xcz/DM2.jpg"
+    ],
+
+    "description": "From SEO to paid ads — learn everything needed to grow a business online.",
+    "whatYouWillLearn": [
+      "SEO fundamentals",
+      "Facebook & Google ads",
+      "Content strategy",
+      "Analytics & reporting"
+    ],
+    "requirements": ["Laptop and internet"],
+    "highlights": ["60+ lessons", "Live Q&A", "Case studies"],
+
+    "location": { "type": "Online" },
+
+    "schedule": [{ "day": "Monday", "time": "8 PM – 10 PM" }],
+
+    "faq": [
+      {
+        "question": "Does this include ad practice?",
+        "answer": "Yes, demo ad accounts are included."
+      }
+    ]
+  },
+  {
+    "skillId": 10,
+    "skillName": "Basic Cooking & Recipe Class",
+    "tagline": "Learn to cook tasty everyday meals easily!",
+    "providerName": "Nusrat Jahan",
+    "providerTitle": "Home Chef & Cooking Instructor",
+    "providerEmail": "nusrat@skillswap.com",
+    "providerImage": "https://i.postimg.cc/59QLdkcP/Nusrat-Jahan.jpg",
+
+    "price": 6000,
+    "discountPrice": 5000,
+    "currency": "BDT",
+
+    "rating": 4.6,
+    "totalReviews": 150,
+    "studentsEnrolled": 500,
+
+    "slotsAvailable": 7,
+    "duration": "3 Weeks",
+    "classType": "Offline",
+    "language": "Bangla",
+    "level": "Beginner",
+    "category": "Cooking",
+
+    "thumbnail": "https://i.postimg.cc/DZBF1vj9/Cooking-Class.jpg",
+    "gallery": [
+      "https://i.postimg.cc/QMtQHhkh/Cooking1.jpg",
+      "https://i.postimg.cc/cCBCw3Gf/Cooking2.jpg"
+    ],
+
+    "description": "Learn essential cooking techniques and daily recipes.",
+    "whatYouWillLearn": [
+      "Basic cooking methods",
+      "Rice, curry & bhuna",
+      "Snacks & quick meals",
+      "Kitchen safety"
+    ],
+    "requirements": ["Apron & basic utensils"],
+    "highlights": [
+      "Hands-on cooking",
+      "Recipe book included",
+      "Tasting session"
+    ],
+
+    "location": {
+      "type": "Offline",
+      "address": "Mohammadpur, Dhaka"
+    },
+
+    "schedule": [{ "day": "Thursday", "time": "3 PM – 5 PM" }],
+
+    "faq": [
+      {
+        "question": "Do I need experience?",
+        "answer": "No, complete beginners can join."
+      }
+    ]
+  },
+  {
+    "skillId": 11,
+    "skillName": "Photography Fundamentals",
+    "tagline": "Master camera settings & take stunning photos!",
+    "providerName": "Imran Hossain",
+    "providerTitle": "Professional Photographer",
+    "providerEmail": "imran@skillswap.com",
+    "providerImage": "https://i.postimg.cc/MZ5FMwbc/Imran-Hossain.jpg",
+
+    "price": 18000,
+    "discountPrice": 15000,
+    "currency": "BDT",
+
+    "rating": 4.8,
+    "totalReviews": 175,
+    "studentsEnrolled": 650,
+
+    "slotsAvailable": 4,
+    "duration": "5 Weeks",
+    "classType": "Offline + Online",
+    "language": "Bangla / English",
+    "level": "Beginner",
+    "category": "Photography",
+
+    "thumbnail": "https://i.postimg.cc/9ML3Kb7S/Photography.jpg",
+    "gallery": [
+      "https://i.postimg.cc/7LZ3hHyv/Photo1.jpg",
+      "https://i.postimg.cc/7YNwcgdy/Photo2.jpg"
+    ],
+
+    "description": "Understand exposure, lighting, and composition to capture professional-quality photos.",
+    "whatYouWillLearn": [
+      "Camera settings",
+      "Lighting fundamentals",
+      "Composition rules",
+      "Outdoor photography"
+    ],
+    "requirements": ["DSLR or mirrorless camera"],
+    "highlights": ["Outdoor practice", "Feedback sessions", "Portfolio review"],
+
+    "location": {
+      "type": "Offline + Online",
+      "address": "Gulshan, Dhaka"
+    },
+
+    "schedule": [{ "day": "Saturday", "time": "4 PM – 6 PM" }],
+
+    "faq": [
+      {
+        "question": "Do I need a DSLR?",
+        "answer": "Yes, DSLR or mirrorless required."
+      }
+    ]
+  },
+  {
+    "skillId": 12,
+    "skillName": "Spanish Language Beginner Course",
+    "tagline": "Learn basic Spanish for travel & conversation!",
+    "providerName": "Carlos Diaz",
+    "providerTitle": "Native Spanish Instructor",
+    "providerEmail": "carlos@skillswap.com",
+    "providerImage": "https://i.postimg.cc/RhHRmRPL/Carlos-Diaz.jpg",
+
+    "price": 15000,
+    "discountPrice": 12000,
+    "currency": "BDT",
+
+    "rating": 4.7,
+    "totalReviews": 130,
+    "studentsEnrolled": 420,
+
+    "slotsAvailable": 6,
+    "duration": "5 Weeks",
+    "classType": "Online",
+    "language": "Spanish / English",
+    "level": "Beginner",
+    "category": "Language",
+
+    "thumbnail": "https://i.postimg.cc/wjkpP9BN/Spanish.jpg",
+    "gallery": [
+      "https://i.postimg.cc/G2RbNDTx/Spanish1.jpg",
+      "https://i.postimg.cc/tT14zMgs/Spanish2.jpg"
+    ],
+
+    "description": "Learn essential Spanish vocabulary and conversational skills.",
+    "whatYouWillLearn": [
+      "Basic vocabulary",
+      "Pronunciation",
+      "Daily conversation",
+      "Travel phrases"
+    ],
+    "requirements": ["No experience needed"],
+    "highlights": [
+      "Native trainer",
+      "Practice sessions",
+      "Printable worksheets"
+    ],
+
+    "location": { "type": "Online" },
+
+    "schedule": [{ "day": "Friday", "time": "9 PM – 10 PM" }],
+
+    "faq": [
+      {
+        "question": "Is this class beginner-friendly?",
+        "answer": "Yes, no prior learning is required."
+      }
+    ]
+  },
+  {
+    "skillId": 13,
+    "skillName": "Mobile Photography",
+    "tagline": "Take amazing photos using just your smartphone!",
+    "providerName": "Rony Miah",
+    "providerTitle": "Mobile Photography Expert",
+    "providerEmail": "rony@skillswap.com",
+    "providerImage": "https://i.postimg.cc/Zq6hy0wP/Rony-Miah.jpg",
+
+    "price": 5000,
+    "discountPrice": 4000,
+    "currency": "BDT",
+
+    "rating": 4.6,
+    "totalReviews": 140,
+    "studentsEnrolled": 480,
+
+    "slotsAvailable": 8,
+    "duration": "2 Weeks",
+    "classType": "Offline",
+    "language": "Bangla",
+    "level": "Beginner",
+    "category": "Photography",
+
+    "thumbnail": "https://i.postimg.cc/ZKHHJjC2/Mobile-Photography.jpg",
+    "gallery": [
+      "https://i.postimg.cc/Wb17Z9Cn/Mobile1.jpg",
+      "https://i.postimg.cc/VkmmKxp6/Mobile2.jpg"
+    ],
+
+    "description": "Learn how to shoot and edit stunning photos using smartphone apps.",
+    "whatYouWillLearn": [
+      "Lighting basics",
+      "Phone camera settings",
+      "Portrait photography",
+      "Mobile editing apps"
+    ],
+    "requirements": ["Smartphone with camera"],
+    "highlights": ["Outdoor shoots", "Editing lessons", "Beginner friendly"],
+
+    "location": {
+      "type": "Offline",
+      "address": "Hatirjheel, Dhaka"
+    },
+
+    "schedule": [{ "day": "Friday", "time": "3 PM – 4 PM" }],
+
+    "faq": [
+      {
+        "question": "Is DSLR required?",
+        "answer": "No, this class is 100% mobile-based."
+      }
+    ]
+  },
+  {
+    "skillId": 14,
+    "skillName": "Content Writing Fundamentals",
+    "tagline": "Learn to write blogs, scripts & creative content!",
+    "providerName": "Mahira Zaman",
+    "providerTitle": "Content Writer & Editor",
+    "providerEmail": "mahira@skillswap.com",
+    "providerImage": "https://i.postimg.cc/Qt4PRT7f/Mahira-Zaman.jpg",
+
+    "price": 12000,
+    "discountPrice": 9500,
+    "currency": "BDT",
+
+    "rating": 4.8,
+    "totalReviews": 180,
+    "studentsEnrolled": 620,
+
+    "slotsAvailable": 6,
+    "duration": "4 Weeks",
+    "classType": "Online",
+    "language": "Bangla / English",
+    "level": "Beginner",
+    "category": "Writing",
+
+    "thumbnail": "https://i.postimg.cc/rmG8bf4M/Content-Writing.jpg",
+    "gallery": [
+      "https://i.postimg.cc/fWk3bjK9/Content1.jpg",
+      "https://i.postimg.cc/SspQRYJ7/Content2.jpg"
+    ],
+
+    "description": "Learn content writing structure, storytelling, and SEO content basics.",
+    "whatYouWillLearn": [
+      "Blog writing",
+      "SEO-friendly content",
+      "Creative storytelling",
+      "Copywriting basics"
+    ],
+    "requirements": ["Laptop & internet"],
+    "highlights": ["Assignments", "Feedback sessions", "Writing templates"],
+
+    "location": { "type": "Online" },
+
+    "schedule": [{ "day": "Sunday", "time": "8 PM – 9 PM" }],
+
+    "faq": [
+      {
+        "question": "Do I need writing experience?",
+        "answer": "No, you will learn from scratch."
+      }
+    ]
+  },
+  {
+    "skillId": 15,
+    "skillName": "UI/UX Design for Beginners",
+    "tagline": "Learn Figma, wireframing & app design!",
+    "providerName": "Nafis Rahim",
+    "providerTitle": "UI/UX Designer",
+    "providerEmail": "nafis@skillswap.com",
+    "providerImage": "https://i.postimg.cc/W1TmSZmN/Nafis-Rahim.jpg",
+
+    "price": 22000,
+    "discountPrice": 18500,
+    "currency": "BDT",
+
+    "rating": 4.7,
+    "totalReviews": 200,
+    "studentsEnrolled": 950,
+
+    "slotsAvailable": 4,
+    "duration": "5 Weeks",
+    "classType": "Online",
+    "language": "Bangla / English",
+    "level": "Beginner",
+    "category": "Design",
+
+    "thumbnail": "https://i.postimg.cc/dVzpqMp1/UIUX.jpg",
+    "gallery": [
+      "https://i.postimg.cc/m2BwW0Xq/UIUX1.jpg",
+      "https://i.postimg.cc/Y0bFYq1c/UIUX2.jpg"
+    ],
+
+    "description": "Start your UI/UX career with hands-on design projects using Figma.",
+    "whatYouWillLearn": [
+      "Wireframes & mockups",
+      "Figma essentials",
+      "App UI design",
+      "UX research"
+    ],
+    "requirements": ["Laptop"],
+    "highlights": ["Portfolio project", "Live reviews", "Case studies"],
+
+    "location": { "type": "Online" },
+
+    "schedule": [{ "day": "Saturday", "time": "9 PM – 10 PM" }],
+
+    "faq": [
+      {
+        "question": "Is this beginner-friendly?",
+        "answer": "Yes, you need no design background."
+      }
+    ]
+  },
+  {
+    "skillId": 16,
+    "skillName": "Motion Graphics with After Effects",
+    "tagline": "Create animations, logo motions & visual effects!",
+    "providerName": "Arif Khan",
+    "providerTitle": "Motion Graphics Artist",
+    "providerEmail": "arif@skillswap.com",
+    "providerImage": "https://i.postimg.cc/76FnHyCB/Arif-Khan.jpg",
+
+    "price": 28000,
+    "discountPrice": 24000,
+    "currency": "BDT",
+
+    "rating": 4.9,
+    "totalReviews": 310,
+    "studentsEnrolled": 1100,
+
+    "slotsAvailable": 5,
+    "duration": "7 Weeks",
+    "classType": "Online",
+    "language": "Bangla",
+    "level": "Intermediate",
+    "category": "Design",
+
+    "thumbnail": "https://i.postimg.cc/HxKm4W4F/Motion-Graphics.jpg",
+    "gallery": [
+      "https://i.postimg.cc/SRwrVmdW/MG1.jpg",
+      "https://i.postimg.cc/444ytj4W/MG2.jpg"
+    ],
+
+    "description": "Create animations and visual effects using Adobe After Effects.",
+    "whatYouWillLearn": [
+      "Keyframe animation",
+      "Logo motion",
+      "Text animation",
+      "VFX basics"
+    ],
+    "requirements": ["High-performance laptop"],
+    "highlights": ["Motion projects", "Downloadable assets", "Certificate"],
+
+    "location": { "type": "Online" },
+
+    "schedule": [{ "day": "Thursday", "time": "8 PM – 10 PM" }],
+
+    "faq": [
+      {
+        "question": "Do I need After Effects?",
+        "answer": "Yes, pre-installed recommended."
+      }
+    ]
+  },
+  {
+    "skillId": 17,
+    "skillName": "Fitness & Weight Loss Program",
+    "tagline": "Burn fat, build strength & get fit at home!",
+    "providerName": "Aminul Islam",
+    "providerTitle": "Certified Fitness Coach",
+    "providerEmail": "aminul@skillswap.com",
+    "providerImage": "https://i.postimg.cc/NjSpGb94/Aminul-Islam.jpg",
+
+    "price": 12000,
+    "discountPrice": 9500,
+    "currency": "BDT",
+
+    "rating": 4.8,
+    "totalReviews": 260,
+    "studentsEnrolled": 1400,
+
+    "slotsAvailable": 10,
+    "duration": "4 Weeks",
+    "classType": "Online",
+    "language": "Bangla",
+    "level": "Beginner to Advanced",
+    "category": "Fitness",
+
+    "thumbnail": "https://i.postimg.cc/9MDhQwjz/Fitness.jpg",
+    "gallery": [
+      "https://i.postimg.cc/59nHRzWC/Fitness1.jpg",
+      "https://i.postimg.cc/wvH1KJ1v/Fitness2.jpg"
+    ],
+
+    "description": "Home-friendly fitness program for weight loss, strength & stamina building.",
+    "whatYouWillLearn": [
+      "Fat burning workouts",
+      "Strength training",
+      "Diet plan basics",
+      "Lifestyle improvement"
+    ],
+    "requirements": ["Yoga mat"],
+    "highlights": ["Daily routine", "Diet plan", "Progress tracking"],
+
+    "location": { "type": "Online" },
+
+    "schedule": [{ "day": "Sunday", "time": "7 PM – 8 PM" }],
+
+    "faq": [
+      {
+        "question": "Is this for beginners?",
+        "answer": "Yes, routines are beginner-friendly."
+      }
+    ]
+  },
+  {
+    "skillId": 18,
+    "skillName": "Public Speaking & Presentation Skills",
+    "tagline": "Build confidence & speak like a leader!",
+    "providerName": "Farhana Chowdhury",
+    "providerTitle": "Communication Coach",
+    "providerEmail": "farhana@skillswap.com",
+    "providerImage": "https://i.postimg.cc/fRx9LgtP/Farhana-Chowdhury.jpg",
+
+    "price": 20000,
+    "discountPrice": 16500,
+    "currency": "BDT",
+
+    "rating": 4.9,
+    "totalReviews": 210,
+    "studentsEnrolled": 700,
+
+    "slotsAvailable": 4,
+    "duration": "4 Weeks",
+    "classType": "Online",
+    "language": "Bangla / English",
+    "level": "Beginner",
+    "category": "Soft Skills",
+
+    "thumbnail": "https://i.postimg.cc/SNVwjzcv/Public-Speaking.jpg",
+    "gallery": [
+      "https://i.postimg.cc/ZKC9gsmb/PS1.jpg",
+      "https://i.postimg.cc/gcGG8fwL/PS2.jpg"
+    ],
+
+    "description": "Gain confidence and master stage presence for presentations and speeches.",
+    "whatYouWillLearn": [
+      "Voice control",
+      "Body language",
+      "Presentation structure",
+      "Overcoming fear"
+    ],
+    "requirements": ["Microphone recommended"],
+    "highlights": ["Live practice", "Feedback sessions", "Speech templates"],
+
+    "location": { "type": "Online" },
+
+    "schedule": [{ "day": "Tuesday", "time": "8 PM – 9 PM" }],
+
+    "faq": [
+      {
+        "question": "Is this for shy people?",
+        "answer": "Yes, this course boosts confidence."
+      }
+    ]
+  },
+  {
+    "skillId": 19,
+    "skillName": "Kids Coding with Scratch",
+    "tagline": "Fun coding for kids (ages 7–14) using Scratch!",
+    "providerName": "Mehedi Hasan",
+    "providerTitle": "STEM Instructor",
+    "providerEmail": "mehedi@skillswap.com",
+    "providerImage": "https://i.postimg.cc/qRxZfSmp/Mehedi-Hasan.jpg",
+
+    "price": 10000,
+    "discountPrice": 8000,
+    "currency": "BDT",
+
+    "rating": 4.9,
+    "totalReviews": 150,
+    "studentsEnrolled": 500,
+
+    "slotsAvailable": 8,
+    "duration": "4 Weeks",
+    "classType": "Online",
+    "language": "Bangla",
+    "level": "Beginner",
+    "category": "Kids / Coding",
+
+    "thumbnail": "https://i.postimg.cc/prW8F1Sz/Scratch.jpg",
+    "gallery": [
+      "https://i.postimg.cc/gJFW9X7v/Scratch1.jpg",
+      "https://i.postimg.cc/MTkmcY8C/Scratch2.jpg"
+    ],
+
+    "description": "Kids learn programming logic by creating fun animations & games.",
+    "whatYouWillLearn": [
+      "Block programming",
+      "Game creation",
+      "Animation",
+      "Logic building"
+    ],
+    "requirements": ["Laptop/tablet with internet"],
+    "highlights": ["Fun tasks", "Live classes", "Project completion"],
+
+    "location": { "type": "Online" },
+
+    "schedule": [{ "day": "Friday", "time": "5 PM – 6 PM" }],
+
+    "faq": [
+      {
+        "question": "Is this for kids only?",
+        "answer": "Yes, ages 7–14."
+      }
+    ]
+  },
+  {
+    "skillId": 20,
+    "skillName": "Entrepreneurship & Business Startup",
+    "tagline": "Learn how to start & scale your business from scratch!",
+    "providerName": "Kamal Uddin",
+    "providerTitle": "Business Consultant & Entrepreneur",
+    "providerEmail": "kamal@skillswap.com",
+    "providerImage": "https://i.postimg.cc/RhrHwJ1n/Kamal-Uddin.jpg",
+
+    "price": 40000,
+    "discountPrice": 33000,
+    "currency": "BDT",
+
+    "rating": 4.8,
+    "totalReviews": 230,
+    "studentsEnrolled": 900,
+
+    "slotsAvailable": 5,
+    "duration": "6 Weeks",
+    "classType": "Online",
+    "language": "Bangla",
+    "level": "Intermediate",
+    "category": "Business",
+
+    "thumbnail": "https://i.postimg.cc/L4xFtD7Q/Business.jpg",
+    "gallery": [
+      "https://i.postimg.cc/3JhDPpsW/Business1.jpg",
+      "https://i.postimg.cc/jSKC3pw6/Business2.jpg"
+    ],
+
+    "description": "Learn business model design, marketing, finance, and scaling strategy.",
+    "whatYouWillLearn": [
+      "Business planning",
+      "Branding & marketing",
+      "Financial basics",
+      "Scaling strategy"
+    ],
+    "requirements": ["Notebook & internet"],
+    "highlights": ["Mentorship", "Case studies", "Practical exercises"],
+
+    "location": { "type": "Online" },
+
+    "schedule": [{ "day": "Saturday", "time": "8 PM – 10 PM" }],
+
+    "faq": [
+      {
+        "question": "Do I need business experience?",
+        "answer": "No, beginners can join."
+      }
+    ]
   }
 ]

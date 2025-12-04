@@ -6,7 +6,7 @@ import Footer from "../Components/Footer";
 const DasBoard = () => {
   return (
     <div>
-      <header>
+      <header className="sticky top-0 z-50">
         <Navbar />
       </header>
       <main>

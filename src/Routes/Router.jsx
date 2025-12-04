@@ -12,6 +12,7 @@ import DasBoard from "../Roots/DasBoard";
 import Register from "../Pages/Register";
 import MyProfile from "../Pages/MyProfile";
 import PrivateRoute from "../Provider/PrivateRoute";
+import BrowseSkillDetails from "../Pages/BrowseSkillDetails";
 
 export const router = createBrowserRouter([
   {
@@ -28,6 +29,12 @@ export const router = createBrowserRouter([
       {
         path: "browseskills",
         element: <BrowseSkill />,
+        loader: () => fetch("/Browser.json"),
+        hydrateFallbackElement: <LoadingPage />,
+      },
+      {
+        path: "browseskills/:id",
+        element: <BrowseSkillDetails />,
         loader: () => fetch("/Browser.json"),
         hydrateFallbackElement: <LoadingPage />,
       },

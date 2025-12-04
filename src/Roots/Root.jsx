@@ -12,7 +12,7 @@ const Root = () => {
       <header className="sticky top-0 z-50">
         <Navbar />
       </header>
-      <main className="pt-10 px-4 py-6">
+      <main className="">
         {state === "loading" ? <LoadingPage /> : <Outlet />}
       </main>
       <Footer />

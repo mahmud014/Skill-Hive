@@ -16,7 +16,7 @@ const Home = () => {
   }, [skillsData]);
 
   return (
-    <div className="px-4 sm:px-6 lg:px-8">
+    <div>
       <title>SkillHive - Home</title>
       <Suspense fallback={<LoadingPage />}>
         <section className="mb-8">
